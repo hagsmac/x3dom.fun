@@ -1,67 +1,74 @@
 {
- "galaxy": {
-  "loadMs": 591,
-  "colors1": 209,
-  "colors2": 187,
-  "diffPct": 4.68,
+ "flywheel": {
+  "loadMs": 989,
+  "colors1": 322,
+  "colors2": 315,
+  "diffPct": 16.93,
   "logs": [
    "Failed to load resource: the server responded with a status of 404 (Not Found)"
   ]
  },
+ "galaxy": {
+  "loadMs": 359,
+  "colors1": 211,
+  "colors2": 199,
+  "diffPct": 4.7,
+  "logs": []
+ },
  "sierpinski": {
-  "loadMs": 428,
-  "colors1": 63,
-  "colors2": 201,
-  "diffPct": 11.5,
+  "loadMs": 409,
+  "colors1": 59,
+  "colors2": 218,
+  "diffPct": 11.07,
   "logs": []
  },
  "equalizer": {
-  "loadMs": 463,
-  "colors1": 165,
-  "colors2": 279,
-  "diffPct": 38.28,
+  "loadMs": 670,
+  "colors1": 187,
+  "colors2": 259,
+  "diffPct": 35.1,
   "logs": []
  },
  "cradle": {
-  "loadMs": 680,
-  "colors1": 219,
+  "loadMs": 537,
+  "colors1": 224,
   "colors2": 218,
-  "diffPct": 1.2,
+  "diffPct": 1.06,
   "logs": []
  },
  "whack": {
-  "loadMs": 762,
-  "colors1": 108,
-  "colors2": 90,
-  "diffPct": 4.4,
+  "loadMs": 569,
+  "colors1": 123,
+  "colors2": 97,
+  "diffPct": 8.64,
   "logs": []
  },
  "tunnel": {
-  "loadMs": 735,
-  "colors1": 158,
-  "colors2": 151,
-  "diffPct": 33.92,
+  "loadMs": 619,
+  "colors1": 184,
+  "colors2": 160,
+  "diffPct": 24.4,
   "logs": []
  },
  "solar": {
-  "loadMs": 654,
-  "colors1": 127,
-  "colors2": 123,
-  "diffPct": 2.14,
+  "loadMs": 658,
+  "colors1": 133,
+  "colors2": 120,
+  "diffPct": 2.07,
   "logs": []
  },
  "bounce": {
-  "loadMs": 556,
-  "colors1": 76,
-  "colors2": 62,
-  "diffPct": 1.24,
+  "loadMs": 565,
+  "colors1": 78,
+  "colors2": 59,
+  "diffPct": 1.25,
   "logs": []
  },
  "touch": {
-  "loadMs": 641,
-  "colors1": 45,
-  "colors2": 52,
-  "diffPct": 4.8,
+  "loadMs": 477,
+  "colors1": 46,
+  "colors2": 48,
+  "diffPct": 4.16,
   "logs": []
  }
 }

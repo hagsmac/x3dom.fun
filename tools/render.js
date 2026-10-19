@@ -3,7 +3,7 @@
 //   NODE_PATH=/tmp/node_modules CHROME_PATH=<chromium> XITE_DIST=/tmp/xite-pack/pkg/package/dist node tools/render.js [scene ...]
 const http=require('http'),fs=require('fs'),path=require('path');const {chromium}=require('playwright');
 const root=path.resolve(__dirname,'..'),dist=process.env.XITE_DIST;
-const all=['galaxy','sierpinski','equalizer','cradle','whack','tunnel','solar','bounce','touch'];const scenes=process.argv.slice(2).length?process.argv.slice(2):all;
+const all=['flywheel','galaxy','sierpinski','equalizer','cradle','whack','tunnel','solar','bounce','touch'];const scenes=process.argv.slice(2).length?process.argv.slice(2):all;
 const clickAt={touch:[0.5,0.5],whack:[0.5,0.55]};
 const mime={'.js':'text/javascript','.mjs':'text/javascript','.css':'text/css','.x3d':'model/x3d+xml','.html':'text/html','.json':'application/json','.woff2':'font/woff2','.png':'image/png'};
 const srv=http.createServer((q,r)=>{const f=path.join(root,decodeURIComponent(q.url.split('?')[0]));if(!f.startsWith(root)||!fs.existsSync(f)||fs.statSync(f).isDirectory()){r.writeHead(404);return r.end();}r.writeHead(200,{'content-type':mime[path.extname(f)]||'application/octet-stream'});fs.createReadStream(f).pipe(r);});

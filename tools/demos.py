@@ -1,5 +1,6 @@
 # id, title, one-line description, X3D features used, interaction hint
 DEMOS = [
+ ("flywheel", "The Copilot Flywheel", "Six stages, one glowing pulse, a hash chain being written: prompt, co-author, tools, validators, renderers, provenance.", "generated tori, Billboard text, 28 ColorInterpolators, PointSet starfield", "drag to orbit"),
  ("galaxy", "Spiral Galaxy", "6,000 stars in two spiral arms with differential rotation: the core spins faster than the rim.", "PointSet + Color, 3 independent pivots", "drag to orbit"),
  ("sierpinski", "Sierpinski Tetrahedron", "A 256-tetrahedron fractal that tumbles, breathes, and is lit by a colour-cycling light.", "IndexedFaceSet, per-vertex Color, animated DirectionalLight", "drag to orbit"),
  ("equalizer", "Ripple Equalizer", "A 13x13 grid of bars driven by a travelling radial wave, like a sound visualiser.", "169 PositionInterpolators (used as scale) on one TimeSensor", "drag to orbit"),

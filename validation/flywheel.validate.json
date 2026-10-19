@@ -1,0 +1,11 @@
+{
+ "file": "flywheel.x3d",
+ "validate_x3d": {
+  "valid": true,
+  "errors": [],
+  "schema_version": "4.0"
+ },
+ "validate_semantic": {
+  "raw": "# Semantic Check Report\n\nFound 0 error(s), 0 warning(s), 2 info(s).\n\n## Info\n\n- **[unused-def]** DEF='Tilt_X' (Transform) is defined but never USE'd and no ROUTE, IMPORT or EXPORT names it. This is fine if you reference it externally (Script, SAI).\n- **[shape-no-appearance]** Shape has no Appearance. The shape will render with a default white material."
+ }
+}
