@@ -1,0 +1,11 @@
+{
+ "file": "galaxy.x3d",
+ "validate_x3d": {
+  "valid": true,
+  "errors": [],
+  "schema_version": "4.0"
+ },
+ "validate_semantic": {
+  "raw": "# Semantic Check Report\n\nFound 0 error(s), 0 warning(s), 4 info(s).\n\n## Info\n\n- **[shape-no-appearance]** Shape has no Appearance. The shape will render with a default white material.\n- **[shape-no-appearance]** Shape has no Appearance. The shape will render with a default white material.\n- **[shape-no-appearance]** Shape has no Appearance. The shape will render with a default white material.\n- **[shape-no-appearance]** Shape has no Appearance. The shape will render with a default white material."
+ }
+}

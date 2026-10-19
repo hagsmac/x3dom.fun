@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile="Interchange" version="4.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="https://www.web3d.org/specifications/x3d-4.0.xsd">
+<head><meta name="title" content="Tiny Solar System"/></head>
+<Scene>
+<NavigationInfo type='"EXAMINE" "ANY"'/>
+<Background skyColor="0.02 0.02 0.08"/>
+<Viewpoint position="0 9 14" orientation="1 0 0 -0.6" description="Overview"/>
+<Transform DEF="Sun_X"><Shape><Appearance><Material diffuseColor="1 0.8 0.1" emissiveColor="1 0.6 0"/></Appearance><Sphere radius="1.2"/></Shape></Transform>
+<TimeSensor DEF="Sun_T" cycleInterval="20" loop="true"/>
+<OrientationInterpolator DEF="Sun_I" key="0 0.25 0.5 0.75 1" keyValue="0 1 0 0.00000 0 1 0 1.57080 0 1 0 3.14159 0 1 0 4.71239 0 1 0 6.28319"/>
+<ROUTE fromNode="Sun_T" fromField="fraction_changed" toNode="Sun_I" toField="set_fraction"/>
+<ROUTE fromNode="Sun_I" fromField="value_changed" toNode="Sun_X" toField="set_rotation"/>
+<Transform DEF="Mercury_X"><Transform translation="2.5 0 0"><Shape><Appearance><Material diffuseColor="0.7 0.6 0.5" /></Appearance><Sphere radius="0.3"/></Shape></Transform></Transform>
+<TimeSensor DEF="Mercury_T" cycleInterval="4" loop="true"/>
+<OrientationInterpolator DEF="Mercury_I" key="0 0.25 0.5 0.75 1" keyValue="0 1 0 0.00000 0 1 0 1.57080 0 1 0 3.14159 0 1 0 4.71239 0 1 0 6.28319"/>
+<ROUTE fromNode="Mercury_T" fromField="fraction_changed" toNode="Mercury_I" toField="set_fraction"/>
+<ROUTE fromNode="Mercury_I" fromField="value_changed" toNode="Mercury_X" toField="set_rotation"/>
+<Transform DEF="Venus_X"><Transform translation="3.8 0 0"><Shape><Appearance><Material diffuseColor="0.9 0.7 0.3" /></Appearance><Sphere radius="0.5"/></Shape></Transform></Transform>
+<TimeSensor DEF="Venus_T" cycleInterval="7" loop="true"/>
+<OrientationInterpolator DEF="Venus_I" key="0 0.25 0.5 0.75 1" keyValue="0 1 0 0.00000 0 1 0 1.57080 0 1 0 3.14159 0 1 0 4.71239 0 1 0 6.28319"/>
+<ROUTE fromNode="Venus_T" fromField="fraction_changed" toNode="Venus_I" toField="set_fraction"/>
+<ROUTE fromNode="Venus_I" fromField="value_changed" toNode="Venus_X" toField="set_rotation"/>
+<Transform DEF="Earth_X"><Transform translation="5.3 0 0"><Shape><Appearance><Material diffuseColor="0.2 0.5 1" /></Appearance><Sphere radius="0.55"/></Shape><Transform DEF="MoonOrbit_X"><Transform translation="1 0 0"><Shape><Appearance><Material diffuseColor="0.8 0.8 0.8" /></Appearance><Sphere radius="0.15"/></Shape></Transform></Transform></Transform></Transform>
+<TimeSensor DEF="Earth_T" cycleInterval="10" loop="true"/>
+<OrientationInterpolator DEF="Earth_I" key="0 0.25 0.5 0.75 1" keyValue="0 1 0 0.00000 0 1 0 1.57080 0 1 0 3.14159 0 1 0 4.71239 0 1 0 6.28319"/>
+<ROUTE fromNode="Earth_T" fromField="fraction_changed" toNode="Earth_I" toField="set_fraction"/>
+<ROUTE fromNode="Earth_I" fromField="value_changed" toNode="Earth_X" toField="set_rotation"/>
+<Transform DEF="Mars_X"><Transform translation="6.8 0 0"><Shape><Appearance><Material diffuseColor="1 0.3 0.2" /></Appearance><Sphere radius="0.4"/></Shape></Transform></Transform>
+<TimeSensor DEF="Mars_T" cycleInterval="15" loop="true"/>
+<OrientationInterpolator DEF="Mars_I" key="0 0.25 0.5 0.75 1" keyValue="0 1 0 0.00000 0 1 0 1.57080 0 1 0 3.14159 0 1 0 4.71239 0 1 0 6.28319"/>
+<ROUTE fromNode="Mars_T" fromField="fraction_changed" toNode="Mars_I" toField="set_fraction"/>
+<ROUTE fromNode="Mars_I" fromField="value_changed" toNode="Mars_X" toField="set_rotation"/>
+<TimeSensor DEF="MoonOrbit_T" cycleInterval="2.5" loop="true"/>
+<OrientationInterpolator DEF="MoonOrbit_I" key="0 0.25 0.5 0.75 1" keyValue="0 1 0 0.00000 0 1 0 1.57080 0 1 0 3.14159 0 1 0 4.71239 0 1 0 6.28319"/>
+<ROUTE fromNode="MoonOrbit_T" fromField="fraction_changed" toNode="MoonOrbit_I" toField="set_fraction"/>
+<ROUTE fromNode="MoonOrbit_I" fromField="value_changed" toNode="MoonOrbit_X" toField="set_rotation"/>
+</Scene>
+</X3D>

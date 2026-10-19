@@ -1,0 +1,1792 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rainbow Tunnel (X3DOM)</title>
+    <link rel="stylesheet" href="https://www.x3dom.org/download/1.8.2/x3dom.css">
+    <script src="https://www.x3dom.org/download/1.8.2/x3dom.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: #1a1a2e;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        h1 {
+            color: #e0e0e0;
+            margin-bottom: 16px;
+        }
+        x3d {
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+<div style="position:fixed;top:8px;left:8px;z-index:9;font:13px sans-serif;background:#000a;padding:4px 10px;border-radius:12px"><a style="color:#8cf" href="../index.html">&larr; all demos</a> &middot; X3DOM &middot; <a style="color:#8cf" href="tunnel.xite.html">open in X_ITE</a></div>
+    <h1>Rainbow Tunnel (X3DOM)</h1>
+    <x3d width="100%" height="80vh">
+        <scene>
+            <navigationinfo type="&quot;NONE&quot;" headlight="false"></navigationinfo>
+            <background skycolor="0 0 0"></background>
+            <fog color="0 0 0" visibilityrange="70" fogtype="LINEAR"></fog>
+            <viewpoint position="0 0 0" description="Inside"></viewpoint>
+            <transform def="Roll_X">
+                <transform def="Travel_X">
+                    <transform translation="0 0 -0" rotation="0 0 1 0.000">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -3" rotation="0 0 1 0.300">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -6" rotation="0 0 1 0.600">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -9" rotation="0 0 1 0.900">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -12" rotation="0 0 1 1.200">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -15" rotation="0 0 1 1.500">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -18" rotation="0 0 1 0.000">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -21" rotation="0 0 1 0.300">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -24" rotation="0 0 1 0.600">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -27" rotation="0 0 1 0.900">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -30" rotation="0 0 1 1.200">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -33" rotation="0 0 1 1.500">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -36" rotation="0 0 1 0.000">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -39" rotation="0 0 1 0.300">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -42" rotation="0 0 1 0.600">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -45" rotation="0 0 1 0.900">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -48" rotation="0 0 1 1.200">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -51" rotation="0 0 1 1.500">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -54" rotation="0 0 1 0.000">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -57" rotation="0 0 1 0.300">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -60" rotation="0 0 1 0.600">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -63" rotation="0 0 1 0.900">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -66" rotation="0 0 1 1.200">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -69" rotation="0 0 1 1.500">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -72" rotation="0 0 1 0.000">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -75" rotation="0 0 1 0.300">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -78" rotation="0 0 1 0.600">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -81" rotation="0 0 1 0.900">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 1.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -84" rotation="0 0 1 1.200">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 0.000 1.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                    <transform translation="0 0 -87" rotation="0 0 1 1.500">
+                        <transform rotation="1 0 0 1.5708">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="1.000 0.000 1.000"></material>
+                                </appearance>
+                                <cylinder radius="5" height="0.3" top="false" bottom="false" solid="false"></cylinder>
+                            </shape>
+                        </transform>
+                        <transform translation="5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-5.00 0.00 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="-2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                        <transform translation="2.50 -4.33 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0 0 0" emissivecolor="0.000 1.000 0.000"></material>
+                                </appearance>
+                                <box size="0.7 0.7 0.7"></box>
+                            </shape>
+                        </transform>
+                    </transform>
+                </transform>
+            </transform>
+            <timesensor def="Travel_T" cycleinterval="4" loop="true"></timesensor>
+            <positioninterpolator def="Travel_I" key="0 1" keyvalue="0 0 0 0 0 18"></positioninterpolator>
+            <route fromnode="Travel_T" fromfield="fraction_changed" tonode="Travel_I" tofield="set_fraction"></route>
+            <route fromnode="Travel_I" fromfield="value_changed" tonode="Travel_X" tofield="set_translation"></route>
+            <timesensor def="Roll_T" cycleinterval="24" loop="true"></timesensor>
+            <orientationinterpolator def="Roll_I" key="0 0.125 0.25 0.375 0.5 0.625 0.75 0.875 1" keyvalue="0 0 1 0.00000 0 0 1 0.78540 0 0 1 1.57080 0 0 1 2.35619 0 0 1 3.14159 0 0 1 3.92699 0 0 1 4.71239 0 0 1 5.49779 0 0 1 6.28319"></orientationinterpolator>
+            <route fromnode="Roll_T" fromfield="fraction_changed" tonode="Roll_I" tofield="set_fraction"></route>
+            <route fromnode="Roll_I" fromfield="value_changed" tonode="Roll_X" tofield="set_rotation"></route>
+        </scene>
+    </x3d>
+</body>
+</html>

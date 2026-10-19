@@ -1,0 +1,11 @@
+{
+ "file": "sierpinski.x3d",
+ "validate_x3d": {
+  "valid": true,
+  "errors": [],
+  "schema_version": "4.0"
+ },
+ "validate_semantic": {
+  "raw": "# Semantic Check: All Clear\n\nNo semantic issues found. The scene looks well-structured.\nNote: This checks common authoring issues beyond XSD schema validation. Use validate_x3d for schema-level validation."
+ }
+}

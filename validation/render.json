@@ -1,0 +1,67 @@
+{
+ "galaxy": {
+  "loadMs": 591,
+  "colors1": 209,
+  "colors2": 187,
+  "diffPct": 4.68,
+  "logs": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ]
+ },
+ "sierpinski": {
+  "loadMs": 428,
+  "colors1": 63,
+  "colors2": 201,
+  "diffPct": 11.5,
+  "logs": []
+ },
+ "equalizer": {
+  "loadMs": 463,
+  "colors1": 165,
+  "colors2": 279,
+  "diffPct": 38.28,
+  "logs": []
+ },
+ "cradle": {
+  "loadMs": 680,
+  "colors1": 219,
+  "colors2": 218,
+  "diffPct": 1.2,
+  "logs": []
+ },
+ "whack": {
+  "loadMs": 762,
+  "colors1": 108,
+  "colors2": 90,
+  "diffPct": 4.4,
+  "logs": []
+ },
+ "tunnel": {
+  "loadMs": 735,
+  "colors1": 158,
+  "colors2": 151,
+  "diffPct": 33.92,
+  "logs": []
+ },
+ "solar": {
+  "loadMs": 654,
+  "colors1": 127,
+  "colors2": 123,
+  "diffPct": 2.14,
+  "logs": []
+ },
+ "bounce": {
+  "loadMs": 556,
+  "colors1": 76,
+  "colors2": 62,
+  "diffPct": 1.24,
+  "logs": []
+ },
+ "touch": {
+  "loadMs": 641,
+  "colors1": 45,
+  "colors2": 52,
+  "diffPct": 4.8,
+  "logs": []
+ }
+}

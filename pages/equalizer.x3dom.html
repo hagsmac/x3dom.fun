@@ -1,0 +1,2242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ripple Equalizer (X3DOM)</title>
+    <link rel="stylesheet" href="https://www.x3dom.org/download/1.8.2/x3dom.css">
+    <script src="https://www.x3dom.org/download/1.8.2/x3dom.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: #1a1a2e;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        h1 {
+            color: #e0e0e0;
+            margin-bottom: 16px;
+        }
+        x3d {
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+<div style="position:fixed;top:8px;left:8px;z-index:9;font:13px sans-serif;background:#000a;padding:4px 10px;border-radius:12px"><a style="color:#8cf" href="../index.html">&larr; all demos</a> &middot; X3DOM &middot; <a style="color:#8cf" href="equalizer.xite.html">open in X_ITE</a></div>
+    <h1>Ripple Equalizer (X3DOM)</h1>
+    <x3d width="100%" height="80vh">
+        <scene>
+            <background skycolor="0.04 0.04 0.1"></background>
+            <viewpoint position="0 8 13" orientation="1 0 0 -0.5" description="Overview"></viewpoint>
+            <transform def="City_X">
+                <transform def="B0_0_X" translation="-5.40 0 -5.40" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.637 0.150" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B0_1_X" translation="-5.40 0 -4.50" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.416 0.150" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B0_2_X" translation="-5.40 0 -3.60" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.219 0.150" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B0_3_X" translation="-5.40 0 -2.70" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.246" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B0_4_X" translation="-5.40 0 -1.80" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.371" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B0_5_X" translation="-5.40 0 -0.90" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.451" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B0_6_X" translation="-5.40 0 0.00" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.478" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B0_7_X" translation="-5.40 0 0.90" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.451" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B0_8_X" translation="-5.40 0 1.80" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.371" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B0_9_X" translation="-5.40 0 2.70" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.246" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B0_10_X" translation="-5.40 0 3.60" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.219 0.150" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B0_11_X" translation="-5.40 0 4.50" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.416 0.150" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B0_12_X" translation="-5.40 0 5.40" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.637 0.150" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B1_0_X" translation="-4.50 0 -5.40" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.416 0.150" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B1_1_X" translation="-4.50 0 -4.50" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.173 0.150" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B1_2_X" translation="-4.50 0 -3.60" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.346" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B1_3_X" translation="-4.50 0 -2.70" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.533" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B1_4_X" translation="-4.50 0 -1.80" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.679" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B1_5_X" translation="-4.50 0 -0.90" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.773" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B1_6_X" translation="-4.50 0 0.00" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.806" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B1_7_X" translation="-4.50 0 0.90" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.773" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B1_8_X" translation="-4.50 0 1.80" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.679" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B1_9_X" translation="-4.50 0 2.70" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.533" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B1_10_X" translation="-4.50 0 3.60" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.346" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B1_11_X" translation="-4.50 0 4.50" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.173 0.150" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B1_12_X" translation="-4.50 0 5.40" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.416 0.150" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B2_0_X" translation="-3.60 0 -5.40" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.219 0.150" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B2_1_X" translation="-3.60 0 -4.50" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.346" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B2_2_X" translation="-3.60 0 -3.60" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.590" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B2_3_X" translation="-3.60 0 -2.70" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.806" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B2_4_X" translation="-3.60 0 -1.80" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.979" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B2_5_X" translation="-3.60 0 -0.90" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.907 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B2_6_X" translation="-3.60 0 0.00" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.866 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B2_7_X" translation="-3.60 0 0.90" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.907 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B2_8_X" translation="-3.60 0 1.80" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.979" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B2_9_X" translation="-3.60 0 2.70" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.806" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B2_10_X" translation="-3.60 0 3.60" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.590" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B2_11_X" translation="-3.60 0 4.50" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.346" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B2_12_X" translation="-3.60 0 5.40" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.219 0.150" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B3_0_X" translation="-2.70 0 -5.40" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.246" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B3_1_X" translation="-2.70 0 -4.50" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.533" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B3_2_X" translation="-2.70 0 -3.60" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.806" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B3_3_X" translation="-2.70 0 -2.70" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.946 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B3_4_X" translation="-2.70 0 -1.80" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.737 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B3_5_X" translation="-2.70 0 -0.90" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.592 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B3_6_X" translation="-2.70 0 0.00" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.539 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B3_7_X" translation="-2.70 0 0.90" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.592 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B3_8_X" translation="-2.70 0 1.80" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.737 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B3_9_X" translation="-2.70 0 2.70" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.946 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B3_10_X" translation="-2.70 0 3.60" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.806" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B3_11_X" translation="-2.70 0 4.50" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.533" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B3_12_X" translation="-2.70 0 5.40" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.246" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B4_0_X" translation="-1.80 0 -5.40" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.371" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B4_1_X" translation="-1.80 0 -4.50" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.679" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B4_2_X" translation="-1.80 0 -3.60" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.979" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B4_3_X" translation="-1.80 0 -2.70" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.737 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B4_4_X" translation="-1.80 0 -1.80" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.482 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B4_5_X" translation="-1.80 0 -0.90" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.288 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B4_6_X" translation="-1.80 0 0.00" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.211 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B4_7_X" translation="-1.80 0 0.90" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.288 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B4_8_X" translation="-1.80 0 1.80" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.482 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B4_9_X" translation="-1.80 0 2.70" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.737 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B4_10_X" translation="-1.80 0 3.60" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.979" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B4_11_X" translation="-1.80 0 4.50" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.679" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B4_12_X" translation="-1.80 0 5.40" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.371" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B5_0_X" translation="-0.90 0 -5.40" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.451" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B5_1_X" translation="-0.90 0 -4.50" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.773" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B5_2_X" translation="-0.90 0 -3.60" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.907 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B5_3_X" translation="-0.90 0 -2.70" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.592 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B5_4_X" translation="-0.90 0 -1.80" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.288 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B5_5_X" translation="-0.90 0 -0.90" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.150 0.281 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B5_6_X" translation="-0.90 0 0.00" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.150 0.417 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B5_7_X" translation="-0.90 0 0.90" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.150 0.281 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B5_8_X" translation="-0.90 0 1.80" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.288 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B5_9_X" translation="-0.90 0 2.70" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.592 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B5_10_X" translation="-0.90 0 3.60" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.907 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B5_11_X" translation="-0.90 0 4.50" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.773" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B5_12_X" translation="-0.90 0 5.40" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.451" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B6_0_X" translation="0.00 0 -5.40" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.478" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B6_1_X" translation="0.00 0 -4.50" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.806" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B6_2_X" translation="0.00 0 -3.60" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.866 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B6_3_X" translation="0.00 0 -2.70" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.539 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B6_4_X" translation="0.00 0 -1.80" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.211 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B6_5_X" translation="0.00 0 -0.90" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.150 0.417 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B6_6_X" translation="0.00 0 0.00" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.150 0.745 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B6_7_X" translation="0.00 0 0.90" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.150 0.417 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B6_8_X" translation="0.00 0 1.80" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.211 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B6_9_X" translation="0.00 0 2.70" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.539 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B6_10_X" translation="0.00 0 3.60" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.866 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B6_11_X" translation="0.00 0 4.50" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.806" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B6_12_X" translation="0.00 0 5.40" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.478" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B7_0_X" translation="0.90 0 -5.40" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.451" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B7_1_X" translation="0.90 0 -4.50" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.773" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B7_2_X" translation="0.90 0 -3.60" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.907 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B7_3_X" translation="0.90 0 -2.70" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.592 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B7_4_X" translation="0.90 0 -1.80" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.288 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B7_5_X" translation="0.90 0 -0.90" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.150 0.281 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B7_6_X" translation="0.90 0 0.00" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.150 0.417 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B7_7_X" translation="0.90 0 0.90" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.150 0.281 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B7_8_X" translation="0.90 0 1.80" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.288 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B7_9_X" translation="0.90 0 2.70" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.592 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B7_10_X" translation="0.90 0 3.60" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.907 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B7_11_X" translation="0.90 0 4.50" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.773" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B7_12_X" translation="0.90 0 5.40" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.451" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B8_0_X" translation="1.80 0 -5.40" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.371" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B8_1_X" translation="1.80 0 -4.50" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.679" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B8_2_X" translation="1.80 0 -3.60" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.979" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B8_3_X" translation="1.80 0 -2.70" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.737 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B8_4_X" translation="1.80 0 -1.80" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.482 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B8_5_X" translation="1.80 0 -0.90" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.288 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B8_6_X" translation="1.80 0 0.00" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.211 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B8_7_X" translation="1.80 0 0.90" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.288 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B8_8_X" translation="1.80 0 1.80" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.482 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B8_9_X" translation="1.80 0 2.70" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.737 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B8_10_X" translation="1.80 0 3.60" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.979" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B8_11_X" translation="1.80 0 4.50" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.679" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B8_12_X" translation="1.80 0 5.40" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.371" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B9_0_X" translation="2.70 0 -5.40" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.246" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B9_1_X" translation="2.70 0 -4.50" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.533" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B9_2_X" translation="2.70 0 -3.60" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.806" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B9_3_X" translation="2.70 0 -2.70" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.946 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B9_4_X" translation="2.70 0 -1.80" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.737 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B9_5_X" translation="2.70 0 -0.90" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.592 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B9_6_X" translation="2.70 0 0.00" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.539 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B9_7_X" translation="2.70 0 0.90" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.592 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B9_8_X" translation="2.70 0 1.80" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.737 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B9_9_X" translation="2.70 0 2.70" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.946 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B9_10_X" translation="2.70 0 3.60" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.806" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B9_11_X" translation="2.70 0 4.50" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.533" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B9_12_X" translation="2.70 0 5.40" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.246" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B10_0_X" translation="3.60 0 -5.40" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.219 0.150" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B10_1_X" translation="3.60 0 -4.50" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.346" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B10_2_X" translation="3.60 0 -3.60" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.590" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B10_3_X" translation="3.60 0 -2.70" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.806" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B10_4_X" translation="3.60 0 -1.80" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.979" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B10_5_X" translation="3.60 0 -0.90" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.907 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B10_6_X" translation="3.60 0 0.00" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.866 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B10_7_X" translation="3.60 0 0.90" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0.907 0.150 1.000" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B10_8_X" translation="3.60 0 1.80" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.979" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B10_9_X" translation="3.60 0 2.70" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.806" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B10_10_X" translation="3.60 0 3.60" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.590" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B10_11_X" translation="3.60 0 4.50" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.346" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B10_12_X" translation="3.60 0 5.40" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.219 0.150" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B11_0_X" translation="4.50 0 -5.40" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.416 0.150" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B11_1_X" translation="4.50 0 -4.50" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.173 0.150" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B11_2_X" translation="4.50 0 -3.60" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.346" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B11_3_X" translation="4.50 0 -2.70" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.533" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B11_4_X" translation="4.50 0 -1.80" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.679" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B11_5_X" translation="4.50 0 -0.90" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.773" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B11_6_X" translation="4.50 0 0.00" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.806" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B11_7_X" translation="4.50 0 0.90" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.773" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B11_8_X" translation="4.50 0 1.80" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.679" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B11_9_X" translation="4.50 0 2.70" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.533" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B11_10_X" translation="4.50 0 3.60" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.346" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B11_11_X" translation="4.50 0 4.50" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.173 0.150" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B11_12_X" translation="4.50 0 5.40" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.416 0.150" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B12_0_X" translation="5.40 0 -5.40" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.637 0.150" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B12_1_X" translation="5.40 0 -4.50" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.416 0.150" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B12_2_X" translation="5.40 0 -3.60" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.219 0.150" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B12_3_X" translation="5.40 0 -2.70" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.246" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B12_4_X" translation="5.40 0 -1.80" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.371" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B12_5_X" translation="5.40 0 -0.90" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.451" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B12_6_X" translation="5.40 0 0.00" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.478" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B12_7_X" translation="5.40 0 0.90" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.451" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B12_8_X" translation="5.40 0 1.80" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.371" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B12_9_X" translation="5.40 0 2.70" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.150 0.246" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B12_10_X" translation="5.40 0 3.60" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.219 0.150" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B12_11_X" translation="5.40 0 4.50" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.416 0.150" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+                <transform def="B12_12_X" translation="5.40 0 5.40" scale="1 1 1">
+                    <transform translation="0 0.5 0">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1.000 0.637 0.150" specularcolor="0.4 0.4 0.4"></material>
+                            </appearance>
+                            <box size="0.7 1 0.7"></box>
+                        </shape>
+                    </transform>
+                </transform>
+            </transform>
+            <timesensor def="Pulse" cycleinterval="3" loop="true"></timesensor>
+            <positioninterpolator def="B0_0_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.23 1 1 0.94 1 1 0.67 1 1 0.47 1 1 0.36 1 1 0.37 1 1 0.49 1 1 0.70 1 1 0.97 1 1 1.27 1 1 1.54 1 1 1.74 1 1 1.85 1 1 1.84 1 1 1.72 1 1 1.51 1 1 1.23 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B0_0_I" tofield="set_fraction"></route>
+            <route fromnode="B0_0_I" fromfield="value_changed" tonode="B0_0_X" tofield="set_scale"></route>
+            <positioninterpolator def="B0_1_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.70 1 1 0.48 1 1 0.36 1 1 0.37 1 1 0.48 1 1 0.70 1 1 0.99 1 1 1.29 1 1 1.58 1 1 1.79 1 1 1.91 1 1 1.91 1 1 1.79 1 1 1.57 1 1 1.29 1 1 0.98 1 1 0.70 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B0_1_I" tofield="set_fraction"></route>
+            <route fromnode="B0_1_I" fromfield="value_changed" tonode="B0_1_X" tofield="set_scale"></route>
+            <positioninterpolator def="B0_2_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.39 1 1 0.35 1 1 0.44 1 1 0.64 1 1 0.92 1 1 1.24 1 1 1.55 1 1 1.80 1 1 1.95 1 1 1.98 1 1 1.89 1 1 1.69 1 1 1.41 1 1 1.09 1 1 0.79 1 1 0.54 1 1 0.39 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B0_2_I" tofield="set_fraction"></route>
+            <route fromnode="B0_2_I" fromfield="value_changed" tonode="B0_2_X" tofield="set_scale"></route>
+            <positioninterpolator def="B0_3_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.38 1 1 0.53 1 1 0.78 1 1 1.09 1 1 1.42 1 1 1.71 1 1 1.93 1 1 2.03 1 1 2.01 1 1 1.86 1 1 1.61 1 1 1.30 1 1 0.97 1 1 0.68 1 1 0.46 1 1 0.36 1 1 0.38 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B0_3_I" tofield="set_fraction"></route>
+            <route fromnode="B0_3_I" fromfield="value_changed" tonode="B0_3_X" tofield="set_scale"></route>
+            <positioninterpolator def="B0_4_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.55 1 1 0.82 1 1 1.14 1 1 1.48 1 1 1.77 1 1 1.98 1 1 2.08 1 1 2.04 1 1 1.88 1 1 1.61 1 1 1.29 1 1 0.95 1 1 0.66 1 1 0.45 1 1 0.35 1 1 0.39 1 1 0.55 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B0_4_I" tofield="set_fraction"></route>
+            <route fromnode="B0_4_I" fromfield="value_changed" tonode="B0_4_X" tofield="set_scale"></route>
+            <positioninterpolator def="B0_5_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.74 1 1 1.05 1 1 1.39 1 1 1.71 1 1 1.96 1 1 2.09 1 1 2.09 1 1 1.96 1 1 1.72 1 1 1.41 1 1 1.06 1 1 0.75 1 1 0.50 1 1 0.37 1 1 0.37 1 1 0.49 1 1 0.74 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B0_5_I" tofield="set_fraction"></route>
+            <route fromnode="B0_5_I" fromfield="value_changed" tonode="B0_5_X" tofield="set_scale"></route>
+            <positioninterpolator def="B0_6_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.81 1 1 1.14 1 1 1.48 1 1 1.79 1 1 2.01 1 1 2.11 1 1 2.08 1 1 1.92 1 1 1.66 1 1 1.33 1 1 0.99 1 1 0.68 1 1 0.46 1 1 0.36 1 1 0.39 1 1 0.54 1 1 0.81 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B0_6_I" tofield="set_fraction"></route>
+            <route fromnode="B0_6_I" fromfield="value_changed" tonode="B0_6_X" tofield="set_scale"></route>
+            <positioninterpolator def="B0_7_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.74 1 1 1.05 1 1 1.39 1 1 1.71 1 1 1.96 1 1 2.09 1 1 2.09 1 1 1.96 1 1 1.72 1 1 1.41 1 1 1.06 1 1 0.75 1 1 0.50 1 1 0.37 1 1 0.37 1 1 0.49 1 1 0.74 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B0_7_I" tofield="set_fraction"></route>
+            <route fromnode="B0_7_I" fromfield="value_changed" tonode="B0_7_X" tofield="set_scale"></route>
+            <positioninterpolator def="B0_8_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.55 1 1 0.82 1 1 1.14 1 1 1.48 1 1 1.77 1 1 1.98 1 1 2.08 1 1 2.04 1 1 1.88 1 1 1.61 1 1 1.29 1 1 0.95 1 1 0.66 1 1 0.45 1 1 0.35 1 1 0.39 1 1 0.55 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B0_8_I" tofield="set_fraction"></route>
+            <route fromnode="B0_8_I" fromfield="value_changed" tonode="B0_8_X" tofield="set_scale"></route>
+            <positioninterpolator def="B0_9_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.38 1 1 0.53 1 1 0.78 1 1 1.09 1 1 1.42 1 1 1.71 1 1 1.93 1 1 2.03 1 1 2.01 1 1 1.86 1 1 1.61 1 1 1.30 1 1 0.97 1 1 0.68 1 1 0.46 1 1 0.36 1 1 0.38 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B0_9_I" tofield="set_fraction"></route>
+            <route fromnode="B0_9_I" fromfield="value_changed" tonode="B0_9_X" tofield="set_scale"></route>
+            <positioninterpolator def="B0_10_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.39 1 1 0.35 1 1 0.44 1 1 0.64 1 1 0.92 1 1 1.24 1 1 1.55 1 1 1.80 1 1 1.95 1 1 1.98 1 1 1.89 1 1 1.69 1 1 1.41 1 1 1.09 1 1 0.79 1 1 0.54 1 1 0.39 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B0_10_I" tofield="set_fraction"></route>
+            <route fromnode="B0_10_I" fromfield="value_changed" tonode="B0_10_X" tofield="set_scale"></route>
+            <positioninterpolator def="B0_11_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.70 1 1 0.48 1 1 0.36 1 1 0.37 1 1 0.48 1 1 0.70 1 1 0.99 1 1 1.29 1 1 1.58 1 1 1.79 1 1 1.91 1 1 1.91 1 1 1.79 1 1 1.57 1 1 1.29 1 1 0.98 1 1 0.70 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B0_11_I" tofield="set_fraction"></route>
+            <route fromnode="B0_11_I" fromfield="value_changed" tonode="B0_11_X" tofield="set_scale"></route>
+            <positioninterpolator def="B0_12_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.23 1 1 0.94 1 1 0.67 1 1 0.47 1 1 0.36 1 1 0.37 1 1 0.49 1 1 0.70 1 1 0.97 1 1 1.27 1 1 1.54 1 1 1.74 1 1 1.85 1 1 1.84 1 1 1.72 1 1 1.51 1 1 1.23 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B0_12_I" tofield="set_fraction"></route>
+            <route fromnode="B0_12_I" fromfield="value_changed" tonode="B0_12_X" tofield="set_scale"></route>
+            <positioninterpolator def="B1_0_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.70 1 1 0.48 1 1 0.36 1 1 0.37 1 1 0.48 1 1 0.70 1 1 0.99 1 1 1.29 1 1 1.58 1 1 1.79 1 1 1.91 1 1 1.91 1 1 1.79 1 1 1.57 1 1 1.29 1 1 0.98 1 1 0.70 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B1_0_I" tofield="set_fraction"></route>
+            <route fromnode="B1_0_I" fromfield="value_changed" tonode="B1_0_X" tofield="set_scale"></route>
+            <positioninterpolator def="B1_1_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.36 1 1 0.38 1 1 0.51 1 1 0.75 1 1 1.06 1 1 1.38 1 1 1.67 1 1 1.88 1 1 1.99 1 1 1.97 1 1 1.84 1 1 1.60 1 1 1.29 1 1 0.97 1 1 0.68 1 1 0.47 1 1 0.36 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B1_1_I" tofield="set_fraction"></route>
+            <route fromnode="B1_1_I" fromfield="value_changed" tonode="B1_1_X" tofield="set_scale"></route>
+            <positioninterpolator def="B1_2_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.51 1 1 0.75 1 1 1.06 1 1 1.40 1 1 1.71 1 1 1.94 1 1 2.06 1 1 2.05 1 1 1.92 1 1 1.67 1 1 1.36 1 1 1.02 1 1 0.72 1 1 0.48 1 1 0.36 1 1 0.37 1 1 0.51 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B1_2_I" tofield="set_fraction"></route>
+            <route fromnode="B1_2_I" fromfield="value_changed" tonode="B1_2_X" tofield="set_scale"></route>
+            <positioninterpolator def="B1_3_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.97 1 1 1.32 1 1 1.65 1 1 1.92 1 1 2.09 1 1 2.13 1 1 2.04 1 1 1.82 1 1 1.52 1 1 1.17 1 1 0.84 1 1 0.56 1 1 0.39 1 1 0.35 1 1 0.45 1 1 0.67 1 1 0.97 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B1_3_I" tofield="set_fraction"></route>
+            <route fromnode="B1_3_I" fromfield="value_changed" tonode="B1_3_X" tofield="set_scale"></route>
+            <positioninterpolator def="B1_4_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.45 1 1 1.78 1 1 2.03 1 1 2.17 1 1 2.17 1 1 2.04 1 1 1.78 1 1 1.45 1 1 1.09 1 1 0.76 1 1 0.51 1 1 0.37 1 1 0.37 1 1 0.50 1 1 0.76 1 1 1.09 1 1 1.45 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B1_4_I" tofield="set_fraction"></route>
+            <route fromnode="B1_4_I" fromfield="value_changed" tonode="B1_4_X" tofield="set_scale"></route>
+            <positioninterpolator def="B1_5_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.75 1 1 2.03 1 1 2.19 1 1 2.22 1 1 2.10 1 1 1.86 1 1 1.54 1 1 1.17 1 1 0.82 1 1 0.55 1 1 0.38 1 1 0.36 1 1 0.47 1 1 0.71 1 1 1.04 1 1 1.40 1 1 1.75 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B1_5_I" tofield="set_fraction"></route>
+            <route fromnode="B1_5_I" fromfield="value_changed" tonode="B1_5_X" tofield="set_scale"></route>
+            <positioninterpolator def="B1_6_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.85 1 1 2.10 1 1 2.22 1 1 2.21 1 1 2.06 1 1 1.79 1 1 1.44 1 1 1.07 1 1 0.74 1 1 0.49 1 1 0.36 1 1 0.38 1 1 0.53 1 1 0.80 1 1 1.15 1 1 1.51 1 1 1.85 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B1_6_I" tofield="set_fraction"></route>
+            <route fromnode="B1_6_I" fromfield="value_changed" tonode="B1_6_X" tofield="set_scale"></route>
+            <positioninterpolator def="B1_7_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.75 1 1 2.03 1 1 2.19 1 1 2.22 1 1 2.10 1 1 1.86 1 1 1.54 1 1 1.17 1 1 0.82 1 1 0.55 1 1 0.38 1 1 0.36 1 1 0.47 1 1 0.71 1 1 1.04 1 1 1.40 1 1 1.75 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B1_7_I" tofield="set_fraction"></route>
+            <route fromnode="B1_7_I" fromfield="value_changed" tonode="B1_7_X" tofield="set_scale"></route>
+            <positioninterpolator def="B1_8_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.45 1 1 1.78 1 1 2.03 1 1 2.17 1 1 2.17 1 1 2.04 1 1 1.78 1 1 1.45 1 1 1.09 1 1 0.76 1 1 0.51 1 1 0.37 1 1 0.37 1 1 0.50 1 1 0.76 1 1 1.09 1 1 1.45 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B1_8_I" tofield="set_fraction"></route>
+            <route fromnode="B1_8_I" fromfield="value_changed" tonode="B1_8_X" tofield="set_scale"></route>
+            <positioninterpolator def="B1_9_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.97 1 1 1.32 1 1 1.65 1 1 1.92 1 1 2.09 1 1 2.13 1 1 2.04 1 1 1.82 1 1 1.52 1 1 1.17 1 1 0.84 1 1 0.56 1 1 0.39 1 1 0.35 1 1 0.45 1 1 0.67 1 1 0.97 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B1_9_I" tofield="set_fraction"></route>
+            <route fromnode="B1_9_I" fromfield="value_changed" tonode="B1_9_X" tofield="set_scale"></route>
+            <positioninterpolator def="B1_10_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.51 1 1 0.75 1 1 1.06 1 1 1.40 1 1 1.71 1 1 1.94 1 1 2.06 1 1 2.05 1 1 1.92 1 1 1.67 1 1 1.36 1 1 1.02 1 1 0.72 1 1 0.48 1 1 0.36 1 1 0.37 1 1 0.51 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B1_10_I" tofield="set_fraction"></route>
+            <route fromnode="B1_10_I" fromfield="value_changed" tonode="B1_10_X" tofield="set_scale"></route>
+            <positioninterpolator def="B1_11_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.36 1 1 0.38 1 1 0.51 1 1 0.75 1 1 1.06 1 1 1.38 1 1 1.67 1 1 1.88 1 1 1.99 1 1 1.97 1 1 1.84 1 1 1.60 1 1 1.29 1 1 0.97 1 1 0.68 1 1 0.47 1 1 0.36 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B1_11_I" tofield="set_fraction"></route>
+            <route fromnode="B1_11_I" fromfield="value_changed" tonode="B1_11_X" tofield="set_scale"></route>
+            <positioninterpolator def="B1_12_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.70 1 1 0.48 1 1 0.36 1 1 0.37 1 1 0.48 1 1 0.70 1 1 0.99 1 1 1.29 1 1 1.58 1 1 1.79 1 1 1.91 1 1 1.91 1 1 1.79 1 1 1.57 1 1 1.29 1 1 0.98 1 1 0.70 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B1_12_I" tofield="set_fraction"></route>
+            <route fromnode="B1_12_I" fromfield="value_changed" tonode="B1_12_X" tofield="set_scale"></route>
+            <positioninterpolator def="B2_0_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.39 1 1 0.35 1 1 0.44 1 1 0.64 1 1 0.92 1 1 1.24 1 1 1.55 1 1 1.80 1 1 1.95 1 1 1.98 1 1 1.89 1 1 1.69 1 1 1.41 1 1 1.09 1 1 0.79 1 1 0.54 1 1 0.39 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B2_0_I" tofield="set_fraction"></route>
+            <route fromnode="B2_0_I" fromfield="value_changed" tonode="B2_0_X" tofield="set_scale"></route>
+            <positioninterpolator def="B2_1_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.51 1 1 0.75 1 1 1.06 1 1 1.40 1 1 1.71 1 1 1.94 1 1 2.06 1 1 2.05 1 1 1.92 1 1 1.67 1 1 1.36 1 1 1.02 1 1 0.72 1 1 0.48 1 1 0.36 1 1 0.37 1 1 0.51 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B2_1_I" tofield="set_fraction"></route>
+            <route fromnode="B2_1_I" fromfield="value_changed" tonode="B2_1_X" tofield="set_scale"></route>
+            <positioninterpolator def="B2_2_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.15 1 1 1.50 1 1 1.82 1 1 2.04 1 1 2.15 1 1 2.12 1 1 1.96 1 1 1.69 1 1 1.36 1 1 1.01 1 1 0.69 1 1 0.46 1 1 0.36 1 1 0.38 1 1 0.55 1 1 0.81 1 1 1.15 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B2_2_I" tofield="set_fraction"></route>
+            <route fromnode="B2_2_I" fromfield="value_changed" tonode="B2_2_X" tofield="set_scale"></route>
+            <positioninterpolator def="B2_3_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.85 1 1 2.10 1 1 2.22 1 1 2.21 1 1 2.06 1 1 1.79 1 1 1.44 1 1 1.07 1 1 0.74 1 1 0.49 1 1 0.36 1 1 0.38 1 1 0.53 1 1 0.80 1 1 1.15 1 1 1.51 1 1 1.85 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B2_3_I" tofield="set_fraction"></route>
+            <route fromnode="B2_3_I" fromfield="value_changed" tonode="B2_3_X" tofield="set_scale"></route>
+            <positioninterpolator def="B2_4_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.24 1 1 2.30 1 1 2.21 1 1 1.98 1 1 1.66 1 1 1.28 1 1 0.91 1 1 0.60 1 1 0.41 1 1 0.35 1 1 0.44 1 1 0.67 1 1 0.99 1 1 1.37 1 1 1.74 1 1 2.05 1 1 2.24 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B2_4_I" tofield="set_fraction"></route>
+            <route fromnode="B2_4_I" fromfield="value_changed" tonode="B2_4_X" tofield="set_scale"></route>
+            <positioninterpolator def="B2_5_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.34 1 1 2.25 1 1 2.02 1 1 1.68 1 1 1.30 1 1 0.92 1 1 0.61 1 1 0.41 1 1 0.35 1 1 0.45 1 1 0.68 1 1 1.01 1 1 1.40 1 1 1.77 1 1 2.09 1 1 2.29 1 1 2.34 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B2_5_I" tofield="set_fraction"></route>
+            <route fromnode="B2_5_I" fromfield="value_changed" tonode="B2_5_X" tofield="set_scale"></route>
+            <positioninterpolator def="B2_6_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.34 1 1 2.20 1 1 1.92 1 1 1.56 1 1 1.17 1 1 0.80 1 1 0.52 1 1 0.37 1 1 0.37 1 1 0.52 1 1 0.79 1 1 1.15 1 1 1.54 1 1 1.91 1 1 2.19 1 1 2.34 1 1 2.34 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B2_6_I" tofield="set_fraction"></route>
+            <route fromnode="B2_6_I" fromfield="value_changed" tonode="B2_6_X" tofield="set_scale"></route>
+            <positioninterpolator def="B2_7_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.34 1 1 2.25 1 1 2.02 1 1 1.68 1 1 1.30 1 1 0.92 1 1 0.61 1 1 0.41 1 1 0.35 1 1 0.45 1 1 0.68 1 1 1.01 1 1 1.40 1 1 1.77 1 1 2.09 1 1 2.29 1 1 2.34 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B2_7_I" tofield="set_fraction"></route>
+            <route fromnode="B2_7_I" fromfield="value_changed" tonode="B2_7_X" tofield="set_scale"></route>
+            <positioninterpolator def="B2_8_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.24 1 1 2.30 1 1 2.21 1 1 1.98 1 1 1.66 1 1 1.28 1 1 0.91 1 1 0.60 1 1 0.41 1 1 0.35 1 1 0.44 1 1 0.67 1 1 0.99 1 1 1.37 1 1 1.74 1 1 2.05 1 1 2.24 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B2_8_I" tofield="set_fraction"></route>
+            <route fromnode="B2_8_I" fromfield="value_changed" tonode="B2_8_X" tofield="set_scale"></route>
+            <positioninterpolator def="B2_9_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.85 1 1 2.10 1 1 2.22 1 1 2.21 1 1 2.06 1 1 1.79 1 1 1.44 1 1 1.07 1 1 0.74 1 1 0.49 1 1 0.36 1 1 0.38 1 1 0.53 1 1 0.80 1 1 1.15 1 1 1.51 1 1 1.85 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B2_9_I" tofield="set_fraction"></route>
+            <route fromnode="B2_9_I" fromfield="value_changed" tonode="B2_9_X" tofield="set_scale"></route>
+            <positioninterpolator def="B2_10_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.15 1 1 1.50 1 1 1.82 1 1 2.04 1 1 2.15 1 1 2.12 1 1 1.96 1 1 1.69 1 1 1.36 1 1 1.01 1 1 0.69 1 1 0.46 1 1 0.36 1 1 0.38 1 1 0.55 1 1 0.81 1 1 1.15 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B2_10_I" tofield="set_fraction"></route>
+            <route fromnode="B2_10_I" fromfield="value_changed" tonode="B2_10_X" tofield="set_scale"></route>
+            <positioninterpolator def="B2_11_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.51 1 1 0.75 1 1 1.06 1 1 1.40 1 1 1.71 1 1 1.94 1 1 2.06 1 1 2.05 1 1 1.92 1 1 1.67 1 1 1.36 1 1 1.02 1 1 0.72 1 1 0.48 1 1 0.36 1 1 0.37 1 1 0.51 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B2_11_I" tofield="set_fraction"></route>
+            <route fromnode="B2_11_I" fromfield="value_changed" tonode="B2_11_X" tofield="set_scale"></route>
+            <positioninterpolator def="B2_12_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.39 1 1 0.35 1 1 0.44 1 1 0.64 1 1 0.92 1 1 1.24 1 1 1.55 1 1 1.80 1 1 1.95 1 1 1.98 1 1 1.89 1 1 1.69 1 1 1.41 1 1 1.09 1 1 0.79 1 1 0.54 1 1 0.39 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B2_12_I" tofield="set_fraction"></route>
+            <route fromnode="B2_12_I" fromfield="value_changed" tonode="B2_12_X" tofield="set_scale"></route>
+            <positioninterpolator def="B3_0_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.38 1 1 0.53 1 1 0.78 1 1 1.09 1 1 1.42 1 1 1.71 1 1 1.93 1 1 2.03 1 1 2.01 1 1 1.86 1 1 1.61 1 1 1.30 1 1 0.97 1 1 0.68 1 1 0.46 1 1 0.36 1 1 0.38 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B3_0_I" tofield="set_fraction"></route>
+            <route fromnode="B3_0_I" fromfield="value_changed" tonode="B3_0_X" tofield="set_scale"></route>
+            <positioninterpolator def="B3_1_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.97 1 1 1.32 1 1 1.65 1 1 1.92 1 1 2.09 1 1 2.13 1 1 2.04 1 1 1.82 1 1 1.52 1 1 1.17 1 1 0.84 1 1 0.56 1 1 0.39 1 1 0.35 1 1 0.45 1 1 0.67 1 1 0.97 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B3_1_I" tofield="set_fraction"></route>
+            <route fromnode="B3_1_I" fromfield="value_changed" tonode="B3_1_X" tofield="set_scale"></route>
+            <positioninterpolator def="B3_2_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.85 1 1 2.10 1 1 2.22 1 1 2.21 1 1 2.06 1 1 1.79 1 1 1.44 1 1 1.07 1 1 0.74 1 1 0.49 1 1 0.36 1 1 0.38 1 1 0.53 1 1 0.80 1 1 1.15 1 1 1.51 1 1 1.85 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B3_2_I" tofield="set_fraction"></route>
+            <route fromnode="B3_2_I" fromfield="value_changed" tonode="B3_2_X" tofield="set_scale"></route>
+            <positioninterpolator def="B3_3_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.33 1 1 2.28 1 1 2.10 1 1 1.80 1 1 1.42 1 1 1.04 1 1 0.70 1 1 0.46 1 1 0.35 1 1 0.40 1 1 0.58 1 1 0.88 1 1 1.25 1 1 1.64 1 1 1.98 1 1 2.22 1 1 2.33 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B3_3_I" tofield="set_fraction"></route>
+            <route fromnode="B3_3_I" fromfield="value_changed" tonode="B3_3_X" tofield="set_scale"></route>
+            <positioninterpolator def="B3_4_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.21 1 1 1.91 1 1 1.54 1 1 1.13 1 1 0.77 1 1 0.50 1 1 0.36 1 1 0.38 1 1 0.55 1 1 0.85 1 1 1.23 1 1 1.63 1 1 1.99 1 1 2.26 1 1 2.40 1 1 2.38 1 1 2.21 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B3_4_I" tofield="set_fraction"></route>
+            <route fromnode="B3_4_I" fromfield="value_changed" tonode="B3_4_X" tofield="set_scale"></route>
+            <positioninterpolator def="B3_5_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.86 1 1 1.46 1 1 1.05 1 1 0.69 1 1 0.45 1 1 0.35 1 1 0.41 1 1 0.63 1 1 0.96 1 1 1.37 1 1 1.78 1 1 2.13 1 1 2.37 1 1 2.47 1 1 2.41 1 1 2.19 1 1 1.86 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B3_5_I" tofield="set_fraction"></route>
+            <route fromnode="B3_5_I" fromfield="value_changed" tonode="B3_5_X" tofield="set_scale"></route>
+            <positioninterpolator def="B3_6_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.69 1 1 1.27 1 1 0.88 1 1 0.56 1 1 0.38 1 1 0.36 1 1 0.50 1 1 0.78 1 1 1.16 1 1 1.57 1 1 1.97 1 1 2.28 1 1 2.46 1 1 2.48 1 1 2.34 1 1 2.07 1 1 1.69 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B3_6_I" tofield="set_fraction"></route>
+            <route fromnode="B3_6_I" fromfield="value_changed" tonode="B3_6_X" tofield="set_scale"></route>
+            <positioninterpolator def="B3_7_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.86 1 1 1.46 1 1 1.05 1 1 0.69 1 1 0.45 1 1 0.35 1 1 0.41 1 1 0.63 1 1 0.96 1 1 1.37 1 1 1.78 1 1 2.13 1 1 2.37 1 1 2.47 1 1 2.41 1 1 2.19 1 1 1.86 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B3_7_I" tofield="set_fraction"></route>
+            <route fromnode="B3_7_I" fromfield="value_changed" tonode="B3_7_X" tofield="set_scale"></route>
+            <positioninterpolator def="B3_8_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.21 1 1 1.91 1 1 1.54 1 1 1.13 1 1 0.77 1 1 0.50 1 1 0.36 1 1 0.38 1 1 0.55 1 1 0.85 1 1 1.23 1 1 1.63 1 1 1.99 1 1 2.26 1 1 2.40 1 1 2.38 1 1 2.21 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B3_8_I" tofield="set_fraction"></route>
+            <route fromnode="B3_8_I" fromfield="value_changed" tonode="B3_8_X" tofield="set_scale"></route>
+            <positioninterpolator def="B3_9_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.33 1 1 2.28 1 1 2.10 1 1 1.80 1 1 1.42 1 1 1.04 1 1 0.70 1 1 0.46 1 1 0.35 1 1 0.40 1 1 0.58 1 1 0.88 1 1 1.25 1 1 1.64 1 1 1.98 1 1 2.22 1 1 2.33 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B3_9_I" tofield="set_fraction"></route>
+            <route fromnode="B3_9_I" fromfield="value_changed" tonode="B3_9_X" tofield="set_scale"></route>
+            <positioninterpolator def="B3_10_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.85 1 1 2.10 1 1 2.22 1 1 2.21 1 1 2.06 1 1 1.79 1 1 1.44 1 1 1.07 1 1 0.74 1 1 0.49 1 1 0.36 1 1 0.38 1 1 0.53 1 1 0.80 1 1 1.15 1 1 1.51 1 1 1.85 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B3_10_I" tofield="set_fraction"></route>
+            <route fromnode="B3_10_I" fromfield="value_changed" tonode="B3_10_X" tofield="set_scale"></route>
+            <positioninterpolator def="B3_11_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.97 1 1 1.32 1 1 1.65 1 1 1.92 1 1 2.09 1 1 2.13 1 1 2.04 1 1 1.82 1 1 1.52 1 1 1.17 1 1 0.84 1 1 0.56 1 1 0.39 1 1 0.35 1 1 0.45 1 1 0.67 1 1 0.97 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B3_11_I" tofield="set_fraction"></route>
+            <route fromnode="B3_11_I" fromfield="value_changed" tonode="B3_11_X" tofield="set_scale"></route>
+            <positioninterpolator def="B3_12_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.38 1 1 0.53 1 1 0.78 1 1 1.09 1 1 1.42 1 1 1.71 1 1 1.93 1 1 2.03 1 1 2.01 1 1 1.86 1 1 1.61 1 1 1.30 1 1 0.97 1 1 0.68 1 1 0.46 1 1 0.36 1 1 0.38 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B3_12_I" tofield="set_fraction"></route>
+            <route fromnode="B3_12_I" fromfield="value_changed" tonode="B3_12_X" tofield="set_scale"></route>
+            <positioninterpolator def="B4_0_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.55 1 1 0.82 1 1 1.14 1 1 1.48 1 1 1.77 1 1 1.98 1 1 2.08 1 1 2.04 1 1 1.88 1 1 1.61 1 1 1.29 1 1 0.95 1 1 0.66 1 1 0.45 1 1 0.35 1 1 0.39 1 1 0.55 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B4_0_I" tofield="set_fraction"></route>
+            <route fromnode="B4_0_I" fromfield="value_changed" tonode="B4_0_X" tofield="set_scale"></route>
+            <positioninterpolator def="B4_1_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.45 1 1 1.78 1 1 2.03 1 1 2.17 1 1 2.17 1 1 2.04 1 1 1.78 1 1 1.45 1 1 1.09 1 1 0.76 1 1 0.51 1 1 0.37 1 1 0.37 1 1 0.50 1 1 0.76 1 1 1.09 1 1 1.45 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B4_1_I" tofield="set_fraction"></route>
+            <route fromnode="B4_1_I" fromfield="value_changed" tonode="B4_1_X" tofield="set_scale"></route>
+            <positioninterpolator def="B4_2_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.24 1 1 2.30 1 1 2.21 1 1 1.98 1 1 1.66 1 1 1.28 1 1 0.91 1 1 0.60 1 1 0.41 1 1 0.35 1 1 0.44 1 1 0.67 1 1 0.99 1 1 1.37 1 1 1.74 1 1 2.05 1 1 2.24 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B4_2_I" tofield="set_fraction"></route>
+            <route fromnode="B4_2_I" fromfield="value_changed" tonode="B4_2_X" tofield="set_scale"></route>
+            <positioninterpolator def="B4_3_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.21 1 1 1.91 1 1 1.54 1 1 1.13 1 1 0.77 1 1 0.50 1 1 0.36 1 1 0.38 1 1 0.55 1 1 0.85 1 1 1.23 1 1 1.63 1 1 1.99 1 1 2.26 1 1 2.40 1 1 2.38 1 1 2.21 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B4_3_I" tofield="set_fraction"></route>
+            <route fromnode="B4_3_I" fromfield="value_changed" tonode="B4_3_X" tofield="set_scale"></route>
+            <positioninterpolator def="B4_4_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.50 1 1 1.08 1 1 0.71 1 1 0.46 1 1 0.35 1 1 0.41 1 1 0.62 1 1 0.96 1 1 1.37 1 1 1.79 1 1 2.16 1 1 2.41 1 1 2.52 1 1 2.46 1 1 2.24 1 1 1.91 1 1 1.50 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B4_4_I" tofield="set_fraction"></route>
+            <route fromnode="B4_4_I" fromfield="value_changed" tonode="B4_4_X" tofield="set_scale"></route>
+            <positioninterpolator def="B4_5_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.83 1 1 0.53 1 1 0.37 1 1 0.38 1 1 0.55 1 1 0.87 1 1 1.28 1 1 1.72 1 1 2.12 1 1 2.43 1 1 2.59 1 1 2.57 1 1 2.40 1 1 2.08 1 1 1.67 1 1 1.23 1 1 0.83 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B4_5_I" tofield="set_fraction"></route>
+            <route fromnode="B4_5_I" fromfield="value_changed" tonode="B4_5_X" tofield="set_scale"></route>
+            <positioninterpolator def="B4_6_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.61 1 1 0.40 1 1 0.36 1 1 0.48 1 1 0.76 1 1 1.16 1 1 1.60 1 1 2.03 1 1 2.37 1 1 2.59 1 1 2.63 1 1 2.50 1 1 2.22 1 1 1.83 1 1 1.39 1 1 0.96 1 1 0.61 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B4_6_I" tofield="set_fraction"></route>
+            <route fromnode="B4_6_I" fromfield="value_changed" tonode="B4_6_X" tofield="set_scale"></route>
+            <positioninterpolator def="B4_7_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.83 1 1 0.53 1 1 0.37 1 1 0.38 1 1 0.55 1 1 0.87 1 1 1.28 1 1 1.72 1 1 2.12 1 1 2.43 1 1 2.59 1 1 2.57 1 1 2.40 1 1 2.08 1 1 1.67 1 1 1.23 1 1 0.83 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B4_7_I" tofield="set_fraction"></route>
+            <route fromnode="B4_7_I" fromfield="value_changed" tonode="B4_7_X" tofield="set_scale"></route>
+            <positioninterpolator def="B4_8_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.50 1 1 1.08 1 1 0.71 1 1 0.46 1 1 0.35 1 1 0.41 1 1 0.62 1 1 0.96 1 1 1.37 1 1 1.79 1 1 2.16 1 1 2.41 1 1 2.52 1 1 2.46 1 1 2.24 1 1 1.91 1 1 1.50 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B4_8_I" tofield="set_fraction"></route>
+            <route fromnode="B4_8_I" fromfield="value_changed" tonode="B4_8_X" tofield="set_scale"></route>
+            <positioninterpolator def="B4_9_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.21 1 1 1.91 1 1 1.54 1 1 1.13 1 1 0.77 1 1 0.50 1 1 0.36 1 1 0.38 1 1 0.55 1 1 0.85 1 1 1.23 1 1 1.63 1 1 1.99 1 1 2.26 1 1 2.40 1 1 2.38 1 1 2.21 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B4_9_I" tofield="set_fraction"></route>
+            <route fromnode="B4_9_I" fromfield="value_changed" tonode="B4_9_X" tofield="set_scale"></route>
+            <positioninterpolator def="B4_10_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.24 1 1 2.30 1 1 2.21 1 1 1.98 1 1 1.66 1 1 1.28 1 1 0.91 1 1 0.60 1 1 0.41 1 1 0.35 1 1 0.44 1 1 0.67 1 1 0.99 1 1 1.37 1 1 1.74 1 1 2.05 1 1 2.24 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B4_10_I" tofield="set_fraction"></route>
+            <route fromnode="B4_10_I" fromfield="value_changed" tonode="B4_10_X" tofield="set_scale"></route>
+            <positioninterpolator def="B4_11_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.45 1 1 1.78 1 1 2.03 1 1 2.17 1 1 2.17 1 1 2.04 1 1 1.78 1 1 1.45 1 1 1.09 1 1 0.76 1 1 0.51 1 1 0.37 1 1 0.37 1 1 0.50 1 1 0.76 1 1 1.09 1 1 1.45 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B4_11_I" tofield="set_fraction"></route>
+            <route fromnode="B4_11_I" fromfield="value_changed" tonode="B4_11_X" tofield="set_scale"></route>
+            <positioninterpolator def="B4_12_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.55 1 1 0.82 1 1 1.14 1 1 1.48 1 1 1.77 1 1 1.98 1 1 2.08 1 1 2.04 1 1 1.88 1 1 1.61 1 1 1.29 1 1 0.95 1 1 0.66 1 1 0.45 1 1 0.35 1 1 0.39 1 1 0.55 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B4_12_I" tofield="set_fraction"></route>
+            <route fromnode="B4_12_I" fromfield="value_changed" tonode="B4_12_X" tofield="set_scale"></route>
+            <positioninterpolator def="B5_0_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.74 1 1 1.05 1 1 1.39 1 1 1.71 1 1 1.96 1 1 2.09 1 1 2.09 1 1 1.96 1 1 1.72 1 1 1.41 1 1 1.06 1 1 0.75 1 1 0.50 1 1 0.37 1 1 0.37 1 1 0.49 1 1 0.74 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B5_0_I" tofield="set_fraction"></route>
+            <route fromnode="B5_0_I" fromfield="value_changed" tonode="B5_0_X" tofield="set_scale"></route>
+            <positioninterpolator def="B5_1_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.75 1 1 2.03 1 1 2.19 1 1 2.22 1 1 2.10 1 1 1.86 1 1 1.54 1 1 1.17 1 1 0.82 1 1 0.55 1 1 0.38 1 1 0.36 1 1 0.47 1 1 0.71 1 1 1.04 1 1 1.40 1 1 1.75 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B5_1_I" tofield="set_fraction"></route>
+            <route fromnode="B5_1_I" fromfield="value_changed" tonode="B5_1_X" tofield="set_scale"></route>
+            <positioninterpolator def="B5_2_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.34 1 1 2.25 1 1 2.02 1 1 1.68 1 1 1.30 1 1 0.92 1 1 0.61 1 1 0.41 1 1 0.35 1 1 0.45 1 1 0.68 1 1 1.01 1 1 1.40 1 1 1.77 1 1 2.09 1 1 2.29 1 1 2.34 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B5_2_I" tofield="set_fraction"></route>
+            <route fromnode="B5_2_I" fromfield="value_changed" tonode="B5_2_X" tofield="set_scale"></route>
+            <positioninterpolator def="B5_3_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.86 1 1 1.46 1 1 1.05 1 1 0.69 1 1 0.45 1 1 0.35 1 1 0.41 1 1 0.63 1 1 0.96 1 1 1.37 1 1 1.78 1 1 2.13 1 1 2.37 1 1 2.47 1 1 2.41 1 1 2.19 1 1 1.86 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B5_3_I" tofield="set_fraction"></route>
+            <route fromnode="B5_3_I" fromfield="value_changed" tonode="B5_3_X" tofield="set_scale"></route>
+            <positioninterpolator def="B5_4_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.83 1 1 0.53 1 1 0.37 1 1 0.38 1 1 0.55 1 1 0.87 1 1 1.28 1 1 1.72 1 1 2.12 1 1 2.43 1 1 2.59 1 1 2.57 1 1 2.40 1 1 2.08 1 1 1.67 1 1 1.23 1 1 0.83 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B5_4_I" tofield="set_fraction"></route>
+            <route fromnode="B5_4_I" fromfield="value_changed" tonode="B5_4_X" tofield="set_scale"></route>
+            <positioninterpolator def="B5_5_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.35 1 1 0.43 1 1 0.67 1 1 1.05 1 1 1.50 1 1 1.96 1 1 2.35 1 1 2.62 1 1 2.72 1 1 2.65 1 1 2.40 1 1 2.02 1 1 1.57 1 1 1.11 1 1 0.72 1 1 0.45 1 1 0.35 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B5_5_I" tofield="set_fraction"></route>
+            <route fromnode="B5_5_I" fromfield="value_changed" tonode="B5_5_X" tofield="set_scale"></route>
+            <positioninterpolator def="B5_6_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.47 1 1 0.75 1 1 1.16 1 1 1.63 1 1 2.09 1 1 2.47 1 1 2.72 1 1 2.79 1 1 2.67 1 1 2.39 1 1 1.98 1 1 1.51 1 1 1.05 1 1 0.67 1 1 0.42 1 1 0.35 1 1 0.47 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B5_6_I" tofield="set_fraction"></route>
+            <route fromnode="B5_6_I" fromfield="value_changed" tonode="B5_6_X" tofield="set_scale"></route>
+            <positioninterpolator def="B5_7_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.35 1 1 0.43 1 1 0.67 1 1 1.05 1 1 1.50 1 1 1.96 1 1 2.35 1 1 2.62 1 1 2.72 1 1 2.65 1 1 2.40 1 1 2.02 1 1 1.57 1 1 1.11 1 1 0.72 1 1 0.45 1 1 0.35 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B5_7_I" tofield="set_fraction"></route>
+            <route fromnode="B5_7_I" fromfield="value_changed" tonode="B5_7_X" tofield="set_scale"></route>
+            <positioninterpolator def="B5_8_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.83 1 1 0.53 1 1 0.37 1 1 0.38 1 1 0.55 1 1 0.87 1 1 1.28 1 1 1.72 1 1 2.12 1 1 2.43 1 1 2.59 1 1 2.57 1 1 2.40 1 1 2.08 1 1 1.67 1 1 1.23 1 1 0.83 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B5_8_I" tofield="set_fraction"></route>
+            <route fromnode="B5_8_I" fromfield="value_changed" tonode="B5_8_X" tofield="set_scale"></route>
+            <positioninterpolator def="B5_9_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.86 1 1 1.46 1 1 1.05 1 1 0.69 1 1 0.45 1 1 0.35 1 1 0.41 1 1 0.63 1 1 0.96 1 1 1.37 1 1 1.78 1 1 2.13 1 1 2.37 1 1 2.47 1 1 2.41 1 1 2.19 1 1 1.86 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B5_9_I" tofield="set_fraction"></route>
+            <route fromnode="B5_9_I" fromfield="value_changed" tonode="B5_9_X" tofield="set_scale"></route>
+            <positioninterpolator def="B5_10_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.34 1 1 2.25 1 1 2.02 1 1 1.68 1 1 1.30 1 1 0.92 1 1 0.61 1 1 0.41 1 1 0.35 1 1 0.45 1 1 0.68 1 1 1.01 1 1 1.40 1 1 1.77 1 1 2.09 1 1 2.29 1 1 2.34 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B5_10_I" tofield="set_fraction"></route>
+            <route fromnode="B5_10_I" fromfield="value_changed" tonode="B5_10_X" tofield="set_scale"></route>
+            <positioninterpolator def="B5_11_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.75 1 1 2.03 1 1 2.19 1 1 2.22 1 1 2.10 1 1 1.86 1 1 1.54 1 1 1.17 1 1 0.82 1 1 0.55 1 1 0.38 1 1 0.36 1 1 0.47 1 1 0.71 1 1 1.04 1 1 1.40 1 1 1.75 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B5_11_I" tofield="set_fraction"></route>
+            <route fromnode="B5_11_I" fromfield="value_changed" tonode="B5_11_X" tofield="set_scale"></route>
+            <positioninterpolator def="B5_12_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.74 1 1 1.05 1 1 1.39 1 1 1.71 1 1 1.96 1 1 2.09 1 1 2.09 1 1 1.96 1 1 1.72 1 1 1.41 1 1 1.06 1 1 0.75 1 1 0.50 1 1 0.37 1 1 0.37 1 1 0.49 1 1 0.74 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B5_12_I" tofield="set_fraction"></route>
+            <route fromnode="B5_12_I" fromfield="value_changed" tonode="B5_12_X" tofield="set_scale"></route>
+            <positioninterpolator def="B6_0_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.81 1 1 1.14 1 1 1.48 1 1 1.79 1 1 2.01 1 1 2.11 1 1 2.08 1 1 1.92 1 1 1.66 1 1 1.33 1 1 0.99 1 1 0.68 1 1 0.46 1 1 0.36 1 1 0.39 1 1 0.54 1 1 0.81 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B6_0_I" tofield="set_fraction"></route>
+            <route fromnode="B6_0_I" fromfield="value_changed" tonode="B6_0_X" tofield="set_scale"></route>
+            <positioninterpolator def="B6_1_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.85 1 1 2.10 1 1 2.22 1 1 2.21 1 1 2.06 1 1 1.79 1 1 1.44 1 1 1.07 1 1 0.74 1 1 0.49 1 1 0.36 1 1 0.38 1 1 0.53 1 1 0.80 1 1 1.15 1 1 1.51 1 1 1.85 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B6_1_I" tofield="set_fraction"></route>
+            <route fromnode="B6_1_I" fromfield="value_changed" tonode="B6_1_X" tofield="set_scale"></route>
+            <positioninterpolator def="B6_2_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.34 1 1 2.20 1 1 1.92 1 1 1.56 1 1 1.17 1 1 0.80 1 1 0.52 1 1 0.37 1 1 0.37 1 1 0.52 1 1 0.79 1 1 1.15 1 1 1.54 1 1 1.91 1 1 2.19 1 1 2.34 1 1 2.34 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B6_2_I" tofield="set_fraction"></route>
+            <route fromnode="B6_2_I" fromfield="value_changed" tonode="B6_2_X" tofield="set_scale"></route>
+            <positioninterpolator def="B6_3_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.69 1 1 1.27 1 1 0.88 1 1 0.56 1 1 0.38 1 1 0.36 1 1 0.50 1 1 0.78 1 1 1.16 1 1 1.57 1 1 1.97 1 1 2.28 1 1 2.46 1 1 2.48 1 1 2.34 1 1 2.07 1 1 1.69 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B6_3_I" tofield="set_fraction"></route>
+            <route fromnode="B6_3_I" fromfield="value_changed" tonode="B6_3_X" tofield="set_scale"></route>
+            <positioninterpolator def="B6_4_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.61 1 1 0.40 1 1 0.36 1 1 0.48 1 1 0.76 1 1 1.16 1 1 1.60 1 1 2.03 1 1 2.37 1 1 2.59 1 1 2.63 1 1 2.50 1 1 2.22 1 1 1.83 1 1 1.39 1 1 0.96 1 1 0.61 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B6_4_I" tofield="set_fraction"></route>
+            <route fromnode="B6_4_I" fromfield="value_changed" tonode="B6_4_X" tofield="set_scale"></route>
+            <positioninterpolator def="B6_5_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.47 1 1 0.75 1 1 1.16 1 1 1.63 1 1 2.09 1 1 2.47 1 1 2.72 1 1 2.79 1 1 2.67 1 1 2.39 1 1 1.98 1 1 1.51 1 1 1.05 1 1 0.67 1 1 0.42 1 1 0.35 1 1 0.47 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B6_5_I" tofield="set_fraction"></route>
+            <route fromnode="B6_5_I" fromfield="value_changed" tonode="B6_5_X" tofield="set_scale"></route>
+            <positioninterpolator def="B6_6_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.65 1 1 2.15 1 1 2.57 1 1 2.85 1 1 2.95 1 1 2.85 1 1 2.57 1 1 2.15 1 1 1.65 1 1 1.15 1 1 0.73 1 1 0.45 1 1 0.35 1 1 0.45 1 1 0.73 1 1 1.15 1 1 1.65 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B6_6_I" tofield="set_fraction"></route>
+            <route fromnode="B6_6_I" fromfield="value_changed" tonode="B6_6_X" tofield="set_scale"></route>
+            <positioninterpolator def="B6_7_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.47 1 1 0.75 1 1 1.16 1 1 1.63 1 1 2.09 1 1 2.47 1 1 2.72 1 1 2.79 1 1 2.67 1 1 2.39 1 1 1.98 1 1 1.51 1 1 1.05 1 1 0.67 1 1 0.42 1 1 0.35 1 1 0.47 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B6_7_I" tofield="set_fraction"></route>
+            <route fromnode="B6_7_I" fromfield="value_changed" tonode="B6_7_X" tofield="set_scale"></route>
+            <positioninterpolator def="B6_8_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.61 1 1 0.40 1 1 0.36 1 1 0.48 1 1 0.76 1 1 1.16 1 1 1.60 1 1 2.03 1 1 2.37 1 1 2.59 1 1 2.63 1 1 2.50 1 1 2.22 1 1 1.83 1 1 1.39 1 1 0.96 1 1 0.61 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B6_8_I" tofield="set_fraction"></route>
+            <route fromnode="B6_8_I" fromfield="value_changed" tonode="B6_8_X" tofield="set_scale"></route>
+            <positioninterpolator def="B6_9_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.69 1 1 1.27 1 1 0.88 1 1 0.56 1 1 0.38 1 1 0.36 1 1 0.50 1 1 0.78 1 1 1.16 1 1 1.57 1 1 1.97 1 1 2.28 1 1 2.46 1 1 2.48 1 1 2.34 1 1 2.07 1 1 1.69 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B6_9_I" tofield="set_fraction"></route>
+            <route fromnode="B6_9_I" fromfield="value_changed" tonode="B6_9_X" tofield="set_scale"></route>
+            <positioninterpolator def="B6_10_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.34 1 1 2.20 1 1 1.92 1 1 1.56 1 1 1.17 1 1 0.80 1 1 0.52 1 1 0.37 1 1 0.37 1 1 0.52 1 1 0.79 1 1 1.15 1 1 1.54 1 1 1.91 1 1 2.19 1 1 2.34 1 1 2.34 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B6_10_I" tofield="set_fraction"></route>
+            <route fromnode="B6_10_I" fromfield="value_changed" tonode="B6_10_X" tofield="set_scale"></route>
+            <positioninterpolator def="B6_11_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.85 1 1 2.10 1 1 2.22 1 1 2.21 1 1 2.06 1 1 1.79 1 1 1.44 1 1 1.07 1 1 0.74 1 1 0.49 1 1 0.36 1 1 0.38 1 1 0.53 1 1 0.80 1 1 1.15 1 1 1.51 1 1 1.85 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B6_11_I" tofield="set_fraction"></route>
+            <route fromnode="B6_11_I" fromfield="value_changed" tonode="B6_11_X" tofield="set_scale"></route>
+            <positioninterpolator def="B6_12_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.81 1 1 1.14 1 1 1.48 1 1 1.79 1 1 2.01 1 1 2.11 1 1 2.08 1 1 1.92 1 1 1.66 1 1 1.33 1 1 0.99 1 1 0.68 1 1 0.46 1 1 0.36 1 1 0.39 1 1 0.54 1 1 0.81 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B6_12_I" tofield="set_fraction"></route>
+            <route fromnode="B6_12_I" fromfield="value_changed" tonode="B6_12_X" tofield="set_scale"></route>
+            <positioninterpolator def="B7_0_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.74 1 1 1.05 1 1 1.39 1 1 1.71 1 1 1.96 1 1 2.09 1 1 2.09 1 1 1.96 1 1 1.72 1 1 1.41 1 1 1.06 1 1 0.75 1 1 0.50 1 1 0.37 1 1 0.37 1 1 0.49 1 1 0.74 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B7_0_I" tofield="set_fraction"></route>
+            <route fromnode="B7_0_I" fromfield="value_changed" tonode="B7_0_X" tofield="set_scale"></route>
+            <positioninterpolator def="B7_1_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.75 1 1 2.03 1 1 2.19 1 1 2.22 1 1 2.10 1 1 1.86 1 1 1.54 1 1 1.17 1 1 0.82 1 1 0.55 1 1 0.38 1 1 0.36 1 1 0.47 1 1 0.71 1 1 1.04 1 1 1.40 1 1 1.75 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B7_1_I" tofield="set_fraction"></route>
+            <route fromnode="B7_1_I" fromfield="value_changed" tonode="B7_1_X" tofield="set_scale"></route>
+            <positioninterpolator def="B7_2_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.34 1 1 2.25 1 1 2.02 1 1 1.68 1 1 1.30 1 1 0.92 1 1 0.61 1 1 0.41 1 1 0.35 1 1 0.45 1 1 0.68 1 1 1.01 1 1 1.40 1 1 1.77 1 1 2.09 1 1 2.29 1 1 2.34 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B7_2_I" tofield="set_fraction"></route>
+            <route fromnode="B7_2_I" fromfield="value_changed" tonode="B7_2_X" tofield="set_scale"></route>
+            <positioninterpolator def="B7_3_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.86 1 1 1.46 1 1 1.05 1 1 0.69 1 1 0.45 1 1 0.35 1 1 0.41 1 1 0.63 1 1 0.96 1 1 1.37 1 1 1.78 1 1 2.13 1 1 2.37 1 1 2.47 1 1 2.41 1 1 2.19 1 1 1.86 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B7_3_I" tofield="set_fraction"></route>
+            <route fromnode="B7_3_I" fromfield="value_changed" tonode="B7_3_X" tofield="set_scale"></route>
+            <positioninterpolator def="B7_4_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.83 1 1 0.53 1 1 0.37 1 1 0.38 1 1 0.55 1 1 0.87 1 1 1.28 1 1 1.72 1 1 2.12 1 1 2.43 1 1 2.59 1 1 2.57 1 1 2.40 1 1 2.08 1 1 1.67 1 1 1.23 1 1 0.83 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B7_4_I" tofield="set_fraction"></route>
+            <route fromnode="B7_4_I" fromfield="value_changed" tonode="B7_4_X" tofield="set_scale"></route>
+            <positioninterpolator def="B7_5_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.35 1 1 0.43 1 1 0.67 1 1 1.05 1 1 1.50 1 1 1.96 1 1 2.35 1 1 2.62 1 1 2.72 1 1 2.65 1 1 2.40 1 1 2.02 1 1 1.57 1 1 1.11 1 1 0.72 1 1 0.45 1 1 0.35 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B7_5_I" tofield="set_fraction"></route>
+            <route fromnode="B7_5_I" fromfield="value_changed" tonode="B7_5_X" tofield="set_scale"></route>
+            <positioninterpolator def="B7_6_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.47 1 1 0.75 1 1 1.16 1 1 1.63 1 1 2.09 1 1 2.47 1 1 2.72 1 1 2.79 1 1 2.67 1 1 2.39 1 1 1.98 1 1 1.51 1 1 1.05 1 1 0.67 1 1 0.42 1 1 0.35 1 1 0.47 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B7_6_I" tofield="set_fraction"></route>
+            <route fromnode="B7_6_I" fromfield="value_changed" tonode="B7_6_X" tofield="set_scale"></route>
+            <positioninterpolator def="B7_7_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.35 1 1 0.43 1 1 0.67 1 1 1.05 1 1 1.50 1 1 1.96 1 1 2.35 1 1 2.62 1 1 2.72 1 1 2.65 1 1 2.40 1 1 2.02 1 1 1.57 1 1 1.11 1 1 0.72 1 1 0.45 1 1 0.35 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B7_7_I" tofield="set_fraction"></route>
+            <route fromnode="B7_7_I" fromfield="value_changed" tonode="B7_7_X" tofield="set_scale"></route>
+            <positioninterpolator def="B7_8_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.83 1 1 0.53 1 1 0.37 1 1 0.38 1 1 0.55 1 1 0.87 1 1 1.28 1 1 1.72 1 1 2.12 1 1 2.43 1 1 2.59 1 1 2.57 1 1 2.40 1 1 2.08 1 1 1.67 1 1 1.23 1 1 0.83 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B7_8_I" tofield="set_fraction"></route>
+            <route fromnode="B7_8_I" fromfield="value_changed" tonode="B7_8_X" tofield="set_scale"></route>
+            <positioninterpolator def="B7_9_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.86 1 1 1.46 1 1 1.05 1 1 0.69 1 1 0.45 1 1 0.35 1 1 0.41 1 1 0.63 1 1 0.96 1 1 1.37 1 1 1.78 1 1 2.13 1 1 2.37 1 1 2.47 1 1 2.41 1 1 2.19 1 1 1.86 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B7_9_I" tofield="set_fraction"></route>
+            <route fromnode="B7_9_I" fromfield="value_changed" tonode="B7_9_X" tofield="set_scale"></route>
+            <positioninterpolator def="B7_10_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.34 1 1 2.25 1 1 2.02 1 1 1.68 1 1 1.30 1 1 0.92 1 1 0.61 1 1 0.41 1 1 0.35 1 1 0.45 1 1 0.68 1 1 1.01 1 1 1.40 1 1 1.77 1 1 2.09 1 1 2.29 1 1 2.34 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B7_10_I" tofield="set_fraction"></route>
+            <route fromnode="B7_10_I" fromfield="value_changed" tonode="B7_10_X" tofield="set_scale"></route>
+            <positioninterpolator def="B7_11_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.75 1 1 2.03 1 1 2.19 1 1 2.22 1 1 2.10 1 1 1.86 1 1 1.54 1 1 1.17 1 1 0.82 1 1 0.55 1 1 0.38 1 1 0.36 1 1 0.47 1 1 0.71 1 1 1.04 1 1 1.40 1 1 1.75 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B7_11_I" tofield="set_fraction"></route>
+            <route fromnode="B7_11_I" fromfield="value_changed" tonode="B7_11_X" tofield="set_scale"></route>
+            <positioninterpolator def="B7_12_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.74 1 1 1.05 1 1 1.39 1 1 1.71 1 1 1.96 1 1 2.09 1 1 2.09 1 1 1.96 1 1 1.72 1 1 1.41 1 1 1.06 1 1 0.75 1 1 0.50 1 1 0.37 1 1 0.37 1 1 0.49 1 1 0.74 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B7_12_I" tofield="set_fraction"></route>
+            <route fromnode="B7_12_I" fromfield="value_changed" tonode="B7_12_X" tofield="set_scale"></route>
+            <positioninterpolator def="B8_0_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.55 1 1 0.82 1 1 1.14 1 1 1.48 1 1 1.77 1 1 1.98 1 1 2.08 1 1 2.04 1 1 1.88 1 1 1.61 1 1 1.29 1 1 0.95 1 1 0.66 1 1 0.45 1 1 0.35 1 1 0.39 1 1 0.55 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B8_0_I" tofield="set_fraction"></route>
+            <route fromnode="B8_0_I" fromfield="value_changed" tonode="B8_0_X" tofield="set_scale"></route>
+            <positioninterpolator def="B8_1_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.45 1 1 1.78 1 1 2.03 1 1 2.17 1 1 2.17 1 1 2.04 1 1 1.78 1 1 1.45 1 1 1.09 1 1 0.76 1 1 0.51 1 1 0.37 1 1 0.37 1 1 0.50 1 1 0.76 1 1 1.09 1 1 1.45 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B8_1_I" tofield="set_fraction"></route>
+            <route fromnode="B8_1_I" fromfield="value_changed" tonode="B8_1_X" tofield="set_scale"></route>
+            <positioninterpolator def="B8_2_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.24 1 1 2.30 1 1 2.21 1 1 1.98 1 1 1.66 1 1 1.28 1 1 0.91 1 1 0.60 1 1 0.41 1 1 0.35 1 1 0.44 1 1 0.67 1 1 0.99 1 1 1.37 1 1 1.74 1 1 2.05 1 1 2.24 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B8_2_I" tofield="set_fraction"></route>
+            <route fromnode="B8_2_I" fromfield="value_changed" tonode="B8_2_X" tofield="set_scale"></route>
+            <positioninterpolator def="B8_3_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.21 1 1 1.91 1 1 1.54 1 1 1.13 1 1 0.77 1 1 0.50 1 1 0.36 1 1 0.38 1 1 0.55 1 1 0.85 1 1 1.23 1 1 1.63 1 1 1.99 1 1 2.26 1 1 2.40 1 1 2.38 1 1 2.21 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B8_3_I" tofield="set_fraction"></route>
+            <route fromnode="B8_3_I" fromfield="value_changed" tonode="B8_3_X" tofield="set_scale"></route>
+            <positioninterpolator def="B8_4_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.50 1 1 1.08 1 1 0.71 1 1 0.46 1 1 0.35 1 1 0.41 1 1 0.62 1 1 0.96 1 1 1.37 1 1 1.79 1 1 2.16 1 1 2.41 1 1 2.52 1 1 2.46 1 1 2.24 1 1 1.91 1 1 1.50 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B8_4_I" tofield="set_fraction"></route>
+            <route fromnode="B8_4_I" fromfield="value_changed" tonode="B8_4_X" tofield="set_scale"></route>
+            <positioninterpolator def="B8_5_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.83 1 1 0.53 1 1 0.37 1 1 0.38 1 1 0.55 1 1 0.87 1 1 1.28 1 1 1.72 1 1 2.12 1 1 2.43 1 1 2.59 1 1 2.57 1 1 2.40 1 1 2.08 1 1 1.67 1 1 1.23 1 1 0.83 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B8_5_I" tofield="set_fraction"></route>
+            <route fromnode="B8_5_I" fromfield="value_changed" tonode="B8_5_X" tofield="set_scale"></route>
+            <positioninterpolator def="B8_6_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.61 1 1 0.40 1 1 0.36 1 1 0.48 1 1 0.76 1 1 1.16 1 1 1.60 1 1 2.03 1 1 2.37 1 1 2.59 1 1 2.63 1 1 2.50 1 1 2.22 1 1 1.83 1 1 1.39 1 1 0.96 1 1 0.61 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B8_6_I" tofield="set_fraction"></route>
+            <route fromnode="B8_6_I" fromfield="value_changed" tonode="B8_6_X" tofield="set_scale"></route>
+            <positioninterpolator def="B8_7_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.83 1 1 0.53 1 1 0.37 1 1 0.38 1 1 0.55 1 1 0.87 1 1 1.28 1 1 1.72 1 1 2.12 1 1 2.43 1 1 2.59 1 1 2.57 1 1 2.40 1 1 2.08 1 1 1.67 1 1 1.23 1 1 0.83 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B8_7_I" tofield="set_fraction"></route>
+            <route fromnode="B8_7_I" fromfield="value_changed" tonode="B8_7_X" tofield="set_scale"></route>
+            <positioninterpolator def="B8_8_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.50 1 1 1.08 1 1 0.71 1 1 0.46 1 1 0.35 1 1 0.41 1 1 0.62 1 1 0.96 1 1 1.37 1 1 1.79 1 1 2.16 1 1 2.41 1 1 2.52 1 1 2.46 1 1 2.24 1 1 1.91 1 1 1.50 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B8_8_I" tofield="set_fraction"></route>
+            <route fromnode="B8_8_I" fromfield="value_changed" tonode="B8_8_X" tofield="set_scale"></route>
+            <positioninterpolator def="B8_9_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.21 1 1 1.91 1 1 1.54 1 1 1.13 1 1 0.77 1 1 0.50 1 1 0.36 1 1 0.38 1 1 0.55 1 1 0.85 1 1 1.23 1 1 1.63 1 1 1.99 1 1 2.26 1 1 2.40 1 1 2.38 1 1 2.21 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B8_9_I" tofield="set_fraction"></route>
+            <route fromnode="B8_9_I" fromfield="value_changed" tonode="B8_9_X" tofield="set_scale"></route>
+            <positioninterpolator def="B8_10_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.24 1 1 2.30 1 1 2.21 1 1 1.98 1 1 1.66 1 1 1.28 1 1 0.91 1 1 0.60 1 1 0.41 1 1 0.35 1 1 0.44 1 1 0.67 1 1 0.99 1 1 1.37 1 1 1.74 1 1 2.05 1 1 2.24 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B8_10_I" tofield="set_fraction"></route>
+            <route fromnode="B8_10_I" fromfield="value_changed" tonode="B8_10_X" tofield="set_scale"></route>
+            <positioninterpolator def="B8_11_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.45 1 1 1.78 1 1 2.03 1 1 2.17 1 1 2.17 1 1 2.04 1 1 1.78 1 1 1.45 1 1 1.09 1 1 0.76 1 1 0.51 1 1 0.37 1 1 0.37 1 1 0.50 1 1 0.76 1 1 1.09 1 1 1.45 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B8_11_I" tofield="set_fraction"></route>
+            <route fromnode="B8_11_I" fromfield="value_changed" tonode="B8_11_X" tofield="set_scale"></route>
+            <positioninterpolator def="B8_12_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.55 1 1 0.82 1 1 1.14 1 1 1.48 1 1 1.77 1 1 1.98 1 1 2.08 1 1 2.04 1 1 1.88 1 1 1.61 1 1 1.29 1 1 0.95 1 1 0.66 1 1 0.45 1 1 0.35 1 1 0.39 1 1 0.55 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B8_12_I" tofield="set_fraction"></route>
+            <route fromnode="B8_12_I" fromfield="value_changed" tonode="B8_12_X" tofield="set_scale"></route>
+            <positioninterpolator def="B9_0_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.38 1 1 0.53 1 1 0.78 1 1 1.09 1 1 1.42 1 1 1.71 1 1 1.93 1 1 2.03 1 1 2.01 1 1 1.86 1 1 1.61 1 1 1.30 1 1 0.97 1 1 0.68 1 1 0.46 1 1 0.36 1 1 0.38 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B9_0_I" tofield="set_fraction"></route>
+            <route fromnode="B9_0_I" fromfield="value_changed" tonode="B9_0_X" tofield="set_scale"></route>
+            <positioninterpolator def="B9_1_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.97 1 1 1.32 1 1 1.65 1 1 1.92 1 1 2.09 1 1 2.13 1 1 2.04 1 1 1.82 1 1 1.52 1 1 1.17 1 1 0.84 1 1 0.56 1 1 0.39 1 1 0.35 1 1 0.45 1 1 0.67 1 1 0.97 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B9_1_I" tofield="set_fraction"></route>
+            <route fromnode="B9_1_I" fromfield="value_changed" tonode="B9_1_X" tofield="set_scale"></route>
+            <positioninterpolator def="B9_2_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.85 1 1 2.10 1 1 2.22 1 1 2.21 1 1 2.06 1 1 1.79 1 1 1.44 1 1 1.07 1 1 0.74 1 1 0.49 1 1 0.36 1 1 0.38 1 1 0.53 1 1 0.80 1 1 1.15 1 1 1.51 1 1 1.85 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B9_2_I" tofield="set_fraction"></route>
+            <route fromnode="B9_2_I" fromfield="value_changed" tonode="B9_2_X" tofield="set_scale"></route>
+            <positioninterpolator def="B9_3_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.33 1 1 2.28 1 1 2.10 1 1 1.80 1 1 1.42 1 1 1.04 1 1 0.70 1 1 0.46 1 1 0.35 1 1 0.40 1 1 0.58 1 1 0.88 1 1 1.25 1 1 1.64 1 1 1.98 1 1 2.22 1 1 2.33 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B9_3_I" tofield="set_fraction"></route>
+            <route fromnode="B9_3_I" fromfield="value_changed" tonode="B9_3_X" tofield="set_scale"></route>
+            <positioninterpolator def="B9_4_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.21 1 1 1.91 1 1 1.54 1 1 1.13 1 1 0.77 1 1 0.50 1 1 0.36 1 1 0.38 1 1 0.55 1 1 0.85 1 1 1.23 1 1 1.63 1 1 1.99 1 1 2.26 1 1 2.40 1 1 2.38 1 1 2.21 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B9_4_I" tofield="set_fraction"></route>
+            <route fromnode="B9_4_I" fromfield="value_changed" tonode="B9_4_X" tofield="set_scale"></route>
+            <positioninterpolator def="B9_5_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.86 1 1 1.46 1 1 1.05 1 1 0.69 1 1 0.45 1 1 0.35 1 1 0.41 1 1 0.63 1 1 0.96 1 1 1.37 1 1 1.78 1 1 2.13 1 1 2.37 1 1 2.47 1 1 2.41 1 1 2.19 1 1 1.86 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B9_5_I" tofield="set_fraction"></route>
+            <route fromnode="B9_5_I" fromfield="value_changed" tonode="B9_5_X" tofield="set_scale"></route>
+            <positioninterpolator def="B9_6_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.69 1 1 1.27 1 1 0.88 1 1 0.56 1 1 0.38 1 1 0.36 1 1 0.50 1 1 0.78 1 1 1.16 1 1 1.57 1 1 1.97 1 1 2.28 1 1 2.46 1 1 2.48 1 1 2.34 1 1 2.07 1 1 1.69 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B9_6_I" tofield="set_fraction"></route>
+            <route fromnode="B9_6_I" fromfield="value_changed" tonode="B9_6_X" tofield="set_scale"></route>
+            <positioninterpolator def="B9_7_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.86 1 1 1.46 1 1 1.05 1 1 0.69 1 1 0.45 1 1 0.35 1 1 0.41 1 1 0.63 1 1 0.96 1 1 1.37 1 1 1.78 1 1 2.13 1 1 2.37 1 1 2.47 1 1 2.41 1 1 2.19 1 1 1.86 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B9_7_I" tofield="set_fraction"></route>
+            <route fromnode="B9_7_I" fromfield="value_changed" tonode="B9_7_X" tofield="set_scale"></route>
+            <positioninterpolator def="B9_8_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.21 1 1 1.91 1 1 1.54 1 1 1.13 1 1 0.77 1 1 0.50 1 1 0.36 1 1 0.38 1 1 0.55 1 1 0.85 1 1 1.23 1 1 1.63 1 1 1.99 1 1 2.26 1 1 2.40 1 1 2.38 1 1 2.21 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B9_8_I" tofield="set_fraction"></route>
+            <route fromnode="B9_8_I" fromfield="value_changed" tonode="B9_8_X" tofield="set_scale"></route>
+            <positioninterpolator def="B9_9_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.33 1 1 2.28 1 1 2.10 1 1 1.80 1 1 1.42 1 1 1.04 1 1 0.70 1 1 0.46 1 1 0.35 1 1 0.40 1 1 0.58 1 1 0.88 1 1 1.25 1 1 1.64 1 1 1.98 1 1 2.22 1 1 2.33 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B9_9_I" tofield="set_fraction"></route>
+            <route fromnode="B9_9_I" fromfield="value_changed" tonode="B9_9_X" tofield="set_scale"></route>
+            <positioninterpolator def="B9_10_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.85 1 1 2.10 1 1 2.22 1 1 2.21 1 1 2.06 1 1 1.79 1 1 1.44 1 1 1.07 1 1 0.74 1 1 0.49 1 1 0.36 1 1 0.38 1 1 0.53 1 1 0.80 1 1 1.15 1 1 1.51 1 1 1.85 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B9_10_I" tofield="set_fraction"></route>
+            <route fromnode="B9_10_I" fromfield="value_changed" tonode="B9_10_X" tofield="set_scale"></route>
+            <positioninterpolator def="B9_11_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.97 1 1 1.32 1 1 1.65 1 1 1.92 1 1 2.09 1 1 2.13 1 1 2.04 1 1 1.82 1 1 1.52 1 1 1.17 1 1 0.84 1 1 0.56 1 1 0.39 1 1 0.35 1 1 0.45 1 1 0.67 1 1 0.97 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B9_11_I" tofield="set_fraction"></route>
+            <route fromnode="B9_11_I" fromfield="value_changed" tonode="B9_11_X" tofield="set_scale"></route>
+            <positioninterpolator def="B9_12_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.38 1 1 0.53 1 1 0.78 1 1 1.09 1 1 1.42 1 1 1.71 1 1 1.93 1 1 2.03 1 1 2.01 1 1 1.86 1 1 1.61 1 1 1.30 1 1 0.97 1 1 0.68 1 1 0.46 1 1 0.36 1 1 0.38 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B9_12_I" tofield="set_fraction"></route>
+            <route fromnode="B9_12_I" fromfield="value_changed" tonode="B9_12_X" tofield="set_scale"></route>
+            <positioninterpolator def="B10_0_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.39 1 1 0.35 1 1 0.44 1 1 0.64 1 1 0.92 1 1 1.24 1 1 1.55 1 1 1.80 1 1 1.95 1 1 1.98 1 1 1.89 1 1 1.69 1 1 1.41 1 1 1.09 1 1 0.79 1 1 0.54 1 1 0.39 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B10_0_I" tofield="set_fraction"></route>
+            <route fromnode="B10_0_I" fromfield="value_changed" tonode="B10_0_X" tofield="set_scale"></route>
+            <positioninterpolator def="B10_1_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.51 1 1 0.75 1 1 1.06 1 1 1.40 1 1 1.71 1 1 1.94 1 1 2.06 1 1 2.05 1 1 1.92 1 1 1.67 1 1 1.36 1 1 1.02 1 1 0.72 1 1 0.48 1 1 0.36 1 1 0.37 1 1 0.51 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B10_1_I" tofield="set_fraction"></route>
+            <route fromnode="B10_1_I" fromfield="value_changed" tonode="B10_1_X" tofield="set_scale"></route>
+            <positioninterpolator def="B10_2_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.15 1 1 1.50 1 1 1.82 1 1 2.04 1 1 2.15 1 1 2.12 1 1 1.96 1 1 1.69 1 1 1.36 1 1 1.01 1 1 0.69 1 1 0.46 1 1 0.36 1 1 0.38 1 1 0.55 1 1 0.81 1 1 1.15 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B10_2_I" tofield="set_fraction"></route>
+            <route fromnode="B10_2_I" fromfield="value_changed" tonode="B10_2_X" tofield="set_scale"></route>
+            <positioninterpolator def="B10_3_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.85 1 1 2.10 1 1 2.22 1 1 2.21 1 1 2.06 1 1 1.79 1 1 1.44 1 1 1.07 1 1 0.74 1 1 0.49 1 1 0.36 1 1 0.38 1 1 0.53 1 1 0.80 1 1 1.15 1 1 1.51 1 1 1.85 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B10_3_I" tofield="set_fraction"></route>
+            <route fromnode="B10_3_I" fromfield="value_changed" tonode="B10_3_X" tofield="set_scale"></route>
+            <positioninterpolator def="B10_4_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.24 1 1 2.30 1 1 2.21 1 1 1.98 1 1 1.66 1 1 1.28 1 1 0.91 1 1 0.60 1 1 0.41 1 1 0.35 1 1 0.44 1 1 0.67 1 1 0.99 1 1 1.37 1 1 1.74 1 1 2.05 1 1 2.24 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B10_4_I" tofield="set_fraction"></route>
+            <route fromnode="B10_4_I" fromfield="value_changed" tonode="B10_4_X" tofield="set_scale"></route>
+            <positioninterpolator def="B10_5_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.34 1 1 2.25 1 1 2.02 1 1 1.68 1 1 1.30 1 1 0.92 1 1 0.61 1 1 0.41 1 1 0.35 1 1 0.45 1 1 0.68 1 1 1.01 1 1 1.40 1 1 1.77 1 1 2.09 1 1 2.29 1 1 2.34 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B10_5_I" tofield="set_fraction"></route>
+            <route fromnode="B10_5_I" fromfield="value_changed" tonode="B10_5_X" tofield="set_scale"></route>
+            <positioninterpolator def="B10_6_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.34 1 1 2.20 1 1 1.92 1 1 1.56 1 1 1.17 1 1 0.80 1 1 0.52 1 1 0.37 1 1 0.37 1 1 0.52 1 1 0.79 1 1 1.15 1 1 1.54 1 1 1.91 1 1 2.19 1 1 2.34 1 1 2.34 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B10_6_I" tofield="set_fraction"></route>
+            <route fromnode="B10_6_I" fromfield="value_changed" tonode="B10_6_X" tofield="set_scale"></route>
+            <positioninterpolator def="B10_7_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.34 1 1 2.25 1 1 2.02 1 1 1.68 1 1 1.30 1 1 0.92 1 1 0.61 1 1 0.41 1 1 0.35 1 1 0.45 1 1 0.68 1 1 1.01 1 1 1.40 1 1 1.77 1 1 2.09 1 1 2.29 1 1 2.34 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B10_7_I" tofield="set_fraction"></route>
+            <route fromnode="B10_7_I" fromfield="value_changed" tonode="B10_7_X" tofield="set_scale"></route>
+            <positioninterpolator def="B10_8_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 2.24 1 1 2.30 1 1 2.21 1 1 1.98 1 1 1.66 1 1 1.28 1 1 0.91 1 1 0.60 1 1 0.41 1 1 0.35 1 1 0.44 1 1 0.67 1 1 0.99 1 1 1.37 1 1 1.74 1 1 2.05 1 1 2.24 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B10_8_I" tofield="set_fraction"></route>
+            <route fromnode="B10_8_I" fromfield="value_changed" tonode="B10_8_X" tofield="set_scale"></route>
+            <positioninterpolator def="B10_9_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.85 1 1 2.10 1 1 2.22 1 1 2.21 1 1 2.06 1 1 1.79 1 1 1.44 1 1 1.07 1 1 0.74 1 1 0.49 1 1 0.36 1 1 0.38 1 1 0.53 1 1 0.80 1 1 1.15 1 1 1.51 1 1 1.85 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B10_9_I" tofield="set_fraction"></route>
+            <route fromnode="B10_9_I" fromfield="value_changed" tonode="B10_9_X" tofield="set_scale"></route>
+            <positioninterpolator def="B10_10_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.15 1 1 1.50 1 1 1.82 1 1 2.04 1 1 2.15 1 1 2.12 1 1 1.96 1 1 1.69 1 1 1.36 1 1 1.01 1 1 0.69 1 1 0.46 1 1 0.36 1 1 0.38 1 1 0.55 1 1 0.81 1 1 1.15 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B10_10_I" tofield="set_fraction"></route>
+            <route fromnode="B10_10_I" fromfield="value_changed" tonode="B10_10_X" tofield="set_scale"></route>
+            <positioninterpolator def="B10_11_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.51 1 1 0.75 1 1 1.06 1 1 1.40 1 1 1.71 1 1 1.94 1 1 2.06 1 1 2.05 1 1 1.92 1 1 1.67 1 1 1.36 1 1 1.02 1 1 0.72 1 1 0.48 1 1 0.36 1 1 0.37 1 1 0.51 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B10_11_I" tofield="set_fraction"></route>
+            <route fromnode="B10_11_I" fromfield="value_changed" tonode="B10_11_X" tofield="set_scale"></route>
+            <positioninterpolator def="B10_12_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.39 1 1 0.35 1 1 0.44 1 1 0.64 1 1 0.92 1 1 1.24 1 1 1.55 1 1 1.80 1 1 1.95 1 1 1.98 1 1 1.89 1 1 1.69 1 1 1.41 1 1 1.09 1 1 0.79 1 1 0.54 1 1 0.39 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B10_12_I" tofield="set_fraction"></route>
+            <route fromnode="B10_12_I" fromfield="value_changed" tonode="B10_12_X" tofield="set_scale"></route>
+            <positioninterpolator def="B11_0_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.70 1 1 0.48 1 1 0.36 1 1 0.37 1 1 0.48 1 1 0.70 1 1 0.99 1 1 1.29 1 1 1.58 1 1 1.79 1 1 1.91 1 1 1.91 1 1 1.79 1 1 1.57 1 1 1.29 1 1 0.98 1 1 0.70 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B11_0_I" tofield="set_fraction"></route>
+            <route fromnode="B11_0_I" fromfield="value_changed" tonode="B11_0_X" tofield="set_scale"></route>
+            <positioninterpolator def="B11_1_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.36 1 1 0.38 1 1 0.51 1 1 0.75 1 1 1.06 1 1 1.38 1 1 1.67 1 1 1.88 1 1 1.99 1 1 1.97 1 1 1.84 1 1 1.60 1 1 1.29 1 1 0.97 1 1 0.68 1 1 0.47 1 1 0.36 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B11_1_I" tofield="set_fraction"></route>
+            <route fromnode="B11_1_I" fromfield="value_changed" tonode="B11_1_X" tofield="set_scale"></route>
+            <positioninterpolator def="B11_2_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.51 1 1 0.75 1 1 1.06 1 1 1.40 1 1 1.71 1 1 1.94 1 1 2.06 1 1 2.05 1 1 1.92 1 1 1.67 1 1 1.36 1 1 1.02 1 1 0.72 1 1 0.48 1 1 0.36 1 1 0.37 1 1 0.51 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B11_2_I" tofield="set_fraction"></route>
+            <route fromnode="B11_2_I" fromfield="value_changed" tonode="B11_2_X" tofield="set_scale"></route>
+            <positioninterpolator def="B11_3_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.97 1 1 1.32 1 1 1.65 1 1 1.92 1 1 2.09 1 1 2.13 1 1 2.04 1 1 1.82 1 1 1.52 1 1 1.17 1 1 0.84 1 1 0.56 1 1 0.39 1 1 0.35 1 1 0.45 1 1 0.67 1 1 0.97 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B11_3_I" tofield="set_fraction"></route>
+            <route fromnode="B11_3_I" fromfield="value_changed" tonode="B11_3_X" tofield="set_scale"></route>
+            <positioninterpolator def="B11_4_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.45 1 1 1.78 1 1 2.03 1 1 2.17 1 1 2.17 1 1 2.04 1 1 1.78 1 1 1.45 1 1 1.09 1 1 0.76 1 1 0.51 1 1 0.37 1 1 0.37 1 1 0.50 1 1 0.76 1 1 1.09 1 1 1.45 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B11_4_I" tofield="set_fraction"></route>
+            <route fromnode="B11_4_I" fromfield="value_changed" tonode="B11_4_X" tofield="set_scale"></route>
+            <positioninterpolator def="B11_5_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.75 1 1 2.03 1 1 2.19 1 1 2.22 1 1 2.10 1 1 1.86 1 1 1.54 1 1 1.17 1 1 0.82 1 1 0.55 1 1 0.38 1 1 0.36 1 1 0.47 1 1 0.71 1 1 1.04 1 1 1.40 1 1 1.75 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B11_5_I" tofield="set_fraction"></route>
+            <route fromnode="B11_5_I" fromfield="value_changed" tonode="B11_5_X" tofield="set_scale"></route>
+            <positioninterpolator def="B11_6_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.85 1 1 2.10 1 1 2.22 1 1 2.21 1 1 2.06 1 1 1.79 1 1 1.44 1 1 1.07 1 1 0.74 1 1 0.49 1 1 0.36 1 1 0.38 1 1 0.53 1 1 0.80 1 1 1.15 1 1 1.51 1 1 1.85 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B11_6_I" tofield="set_fraction"></route>
+            <route fromnode="B11_6_I" fromfield="value_changed" tonode="B11_6_X" tofield="set_scale"></route>
+            <positioninterpolator def="B11_7_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.75 1 1 2.03 1 1 2.19 1 1 2.22 1 1 2.10 1 1 1.86 1 1 1.54 1 1 1.17 1 1 0.82 1 1 0.55 1 1 0.38 1 1 0.36 1 1 0.47 1 1 0.71 1 1 1.04 1 1 1.40 1 1 1.75 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B11_7_I" tofield="set_fraction"></route>
+            <route fromnode="B11_7_I" fromfield="value_changed" tonode="B11_7_X" tofield="set_scale"></route>
+            <positioninterpolator def="B11_8_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.45 1 1 1.78 1 1 2.03 1 1 2.17 1 1 2.17 1 1 2.04 1 1 1.78 1 1 1.45 1 1 1.09 1 1 0.76 1 1 0.51 1 1 0.37 1 1 0.37 1 1 0.50 1 1 0.76 1 1 1.09 1 1 1.45 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B11_8_I" tofield="set_fraction"></route>
+            <route fromnode="B11_8_I" fromfield="value_changed" tonode="B11_8_X" tofield="set_scale"></route>
+            <positioninterpolator def="B11_9_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.97 1 1 1.32 1 1 1.65 1 1 1.92 1 1 2.09 1 1 2.13 1 1 2.04 1 1 1.82 1 1 1.52 1 1 1.17 1 1 0.84 1 1 0.56 1 1 0.39 1 1 0.35 1 1 0.45 1 1 0.67 1 1 0.97 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B11_9_I" tofield="set_fraction"></route>
+            <route fromnode="B11_9_I" fromfield="value_changed" tonode="B11_9_X" tofield="set_scale"></route>
+            <positioninterpolator def="B11_10_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.51 1 1 0.75 1 1 1.06 1 1 1.40 1 1 1.71 1 1 1.94 1 1 2.06 1 1 2.05 1 1 1.92 1 1 1.67 1 1 1.36 1 1 1.02 1 1 0.72 1 1 0.48 1 1 0.36 1 1 0.37 1 1 0.51 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B11_10_I" tofield="set_fraction"></route>
+            <route fromnode="B11_10_I" fromfield="value_changed" tonode="B11_10_X" tofield="set_scale"></route>
+            <positioninterpolator def="B11_11_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.36 1 1 0.38 1 1 0.51 1 1 0.75 1 1 1.06 1 1 1.38 1 1 1.67 1 1 1.88 1 1 1.99 1 1 1.97 1 1 1.84 1 1 1.60 1 1 1.29 1 1 0.97 1 1 0.68 1 1 0.47 1 1 0.36 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B11_11_I" tofield="set_fraction"></route>
+            <route fromnode="B11_11_I" fromfield="value_changed" tonode="B11_11_X" tofield="set_scale"></route>
+            <positioninterpolator def="B11_12_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.70 1 1 0.48 1 1 0.36 1 1 0.37 1 1 0.48 1 1 0.70 1 1 0.99 1 1 1.29 1 1 1.58 1 1 1.79 1 1 1.91 1 1 1.91 1 1 1.79 1 1 1.57 1 1 1.29 1 1 0.98 1 1 0.70 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B11_12_I" tofield="set_fraction"></route>
+            <route fromnode="B11_12_I" fromfield="value_changed" tonode="B11_12_X" tofield="set_scale"></route>
+            <positioninterpolator def="B12_0_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.23 1 1 0.94 1 1 0.67 1 1 0.47 1 1 0.36 1 1 0.37 1 1 0.49 1 1 0.70 1 1 0.97 1 1 1.27 1 1 1.54 1 1 1.74 1 1 1.85 1 1 1.84 1 1 1.72 1 1 1.51 1 1 1.23 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B12_0_I" tofield="set_fraction"></route>
+            <route fromnode="B12_0_I" fromfield="value_changed" tonode="B12_0_X" tofield="set_scale"></route>
+            <positioninterpolator def="B12_1_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.70 1 1 0.48 1 1 0.36 1 1 0.37 1 1 0.48 1 1 0.70 1 1 0.99 1 1 1.29 1 1 1.58 1 1 1.79 1 1 1.91 1 1 1.91 1 1 1.79 1 1 1.57 1 1 1.29 1 1 0.98 1 1 0.70 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B12_1_I" tofield="set_fraction"></route>
+            <route fromnode="B12_1_I" fromfield="value_changed" tonode="B12_1_X" tofield="set_scale"></route>
+            <positioninterpolator def="B12_2_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.39 1 1 0.35 1 1 0.44 1 1 0.64 1 1 0.92 1 1 1.24 1 1 1.55 1 1 1.80 1 1 1.95 1 1 1.98 1 1 1.89 1 1 1.69 1 1 1.41 1 1 1.09 1 1 0.79 1 1 0.54 1 1 0.39 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B12_2_I" tofield="set_fraction"></route>
+            <route fromnode="B12_2_I" fromfield="value_changed" tonode="B12_2_X" tofield="set_scale"></route>
+            <positioninterpolator def="B12_3_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.38 1 1 0.53 1 1 0.78 1 1 1.09 1 1 1.42 1 1 1.71 1 1 1.93 1 1 2.03 1 1 2.01 1 1 1.86 1 1 1.61 1 1 1.30 1 1 0.97 1 1 0.68 1 1 0.46 1 1 0.36 1 1 0.38 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B12_3_I" tofield="set_fraction"></route>
+            <route fromnode="B12_3_I" fromfield="value_changed" tonode="B12_3_X" tofield="set_scale"></route>
+            <positioninterpolator def="B12_4_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.55 1 1 0.82 1 1 1.14 1 1 1.48 1 1 1.77 1 1 1.98 1 1 2.08 1 1 2.04 1 1 1.88 1 1 1.61 1 1 1.29 1 1 0.95 1 1 0.66 1 1 0.45 1 1 0.35 1 1 0.39 1 1 0.55 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B12_4_I" tofield="set_fraction"></route>
+            <route fromnode="B12_4_I" fromfield="value_changed" tonode="B12_4_X" tofield="set_scale"></route>
+            <positioninterpolator def="B12_5_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.74 1 1 1.05 1 1 1.39 1 1 1.71 1 1 1.96 1 1 2.09 1 1 2.09 1 1 1.96 1 1 1.72 1 1 1.41 1 1 1.06 1 1 0.75 1 1 0.50 1 1 0.37 1 1 0.37 1 1 0.49 1 1 0.74 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B12_5_I" tofield="set_fraction"></route>
+            <route fromnode="B12_5_I" fromfield="value_changed" tonode="B12_5_X" tofield="set_scale"></route>
+            <positioninterpolator def="B12_6_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.81 1 1 1.14 1 1 1.48 1 1 1.79 1 1 2.01 1 1 2.11 1 1 2.08 1 1 1.92 1 1 1.66 1 1 1.33 1 1 0.99 1 1 0.68 1 1 0.46 1 1 0.36 1 1 0.39 1 1 0.54 1 1 0.81 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B12_6_I" tofield="set_fraction"></route>
+            <route fromnode="B12_6_I" fromfield="value_changed" tonode="B12_6_X" tofield="set_scale"></route>
+            <positioninterpolator def="B12_7_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.74 1 1 1.05 1 1 1.39 1 1 1.71 1 1 1.96 1 1 2.09 1 1 2.09 1 1 1.96 1 1 1.72 1 1 1.41 1 1 1.06 1 1 0.75 1 1 0.50 1 1 0.37 1 1 0.37 1 1 0.49 1 1 0.74 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B12_7_I" tofield="set_fraction"></route>
+            <route fromnode="B12_7_I" fromfield="value_changed" tonode="B12_7_X" tofield="set_scale"></route>
+            <positioninterpolator def="B12_8_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.55 1 1 0.82 1 1 1.14 1 1 1.48 1 1 1.77 1 1 1.98 1 1 2.08 1 1 2.04 1 1 1.88 1 1 1.61 1 1 1.29 1 1 0.95 1 1 0.66 1 1 0.45 1 1 0.35 1 1 0.39 1 1 0.55 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B12_8_I" tofield="set_fraction"></route>
+            <route fromnode="B12_8_I" fromfield="value_changed" tonode="B12_8_X" tofield="set_scale"></route>
+            <positioninterpolator def="B12_9_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.38 1 1 0.53 1 1 0.78 1 1 1.09 1 1 1.42 1 1 1.71 1 1 1.93 1 1 2.03 1 1 2.01 1 1 1.86 1 1 1.61 1 1 1.30 1 1 0.97 1 1 0.68 1 1 0.46 1 1 0.36 1 1 0.38 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B12_9_I" tofield="set_fraction"></route>
+            <route fromnode="B12_9_I" fromfield="value_changed" tonode="B12_9_X" tofield="set_scale"></route>
+            <positioninterpolator def="B12_10_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.39 1 1 0.35 1 1 0.44 1 1 0.64 1 1 0.92 1 1 1.24 1 1 1.55 1 1 1.80 1 1 1.95 1 1 1.98 1 1 1.89 1 1 1.69 1 1 1.41 1 1 1.09 1 1 0.79 1 1 0.54 1 1 0.39 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B12_10_I" tofield="set_fraction"></route>
+            <route fromnode="B12_10_I" fromfield="value_changed" tonode="B12_10_X" tofield="set_scale"></route>
+            <positioninterpolator def="B12_11_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 0.70 1 1 0.48 1 1 0.36 1 1 0.37 1 1 0.48 1 1 0.70 1 1 0.99 1 1 1.29 1 1 1.58 1 1 1.79 1 1 1.91 1 1 1.91 1 1 1.79 1 1 1.57 1 1 1.29 1 1 0.98 1 1 0.70 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B12_11_I" tofield="set_fraction"></route>
+            <route fromnode="B12_11_I" fromfield="value_changed" tonode="B12_11_X" tofield="set_scale"></route>
+            <positioninterpolator def="B12_12_I" key="0 0.062 0.125 0.188 0.25 0.312 0.375 0.438 0.5 0.562 0.625 0.688 0.75 0.812 0.875 0.938 1" keyvalue="1 1.23 1 1 0.94 1 1 0.67 1 1 0.47 1 1 0.36 1 1 0.37 1 1 0.49 1 1 0.70 1 1 0.97 1 1 1.27 1 1 1.54 1 1 1.74 1 1 1.85 1 1 1.84 1 1 1.72 1 1 1.51 1 1 1.23 1"></positioninterpolator>
+            <route fromnode="Pulse" fromfield="fraction_changed" tonode="B12_12_I" tofield="set_fraction"></route>
+            <route fromnode="B12_12_I" fromfield="value_changed" tonode="B12_12_X" tofield="set_scale"></route>
+            <timesensor def="City_T" cycleinterval="40" loop="true"></timesensor>
+            <orientationinterpolator def="City_I" key="0 0.125 0.25 0.375 0.5 0.625 0.75 0.875 1" keyvalue="0 1 0 0.00000 0 1 0 0.78540 0 1 0 1.57080 0 1 0 2.35619 0 1 0 3.14159 0 1 0 3.92699 0 1 0 4.71239 0 1 0 5.49779 0 1 0 6.28319"></orientationinterpolator>
+            <route fromnode="City_T" fromfield="fraction_changed" tonode="City_I" tofield="set_fraction"></route>
+            <route fromnode="City_I" fromfield="value_changed" tonode="City_X" tofield="set_rotation"></route>
+        </scene>
+    </x3d>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Click Me (X3DOM)</title>
+    <link rel="stylesheet" href="https://www.x3dom.org/download/1.8.2/x3dom.css">
+    <script src="https://www.x3dom.org/download/1.8.2/x3dom.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: #1a1a2e;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        h1 {
+            color: #e0e0e0;
+            margin-bottom: 16px;
+        }
+        x3d {
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+<div style="position:fixed;top:8px;left:8px;z-index:9;font:13px sans-serif;background:#000a;padding:4px 10px;border-radius:12px"><a style="color:#8cf" href="../index.html">&larr; all demos</a> &middot; X3DOM &middot; <a style="color:#8cf" href="touch.xite.html">open in X_ITE</a></div>
+    <h1>Click Me (X3DOM)</h1>
+    <x3d width="100%" height="80vh">
+        <scene>
+            <viewpoint position="0 0 10" description="Front"></viewpoint>
+            <background skycolor="0.1 0.1 0.15"></background>
+            <transform def="A_X" translation="-3 0 0">
+                <shape>
+                    <appearance>
+                        <material def="A_M" diffusecolor="1 0.2 0.2"></material>
+                    </appearance>
+                    <box size="2 2 2"></box>
+                </shape>
+                <touchsensor def="A_Touch" description="click me"></touchsensor>
+            </transform>
+            <timesensor def="A_T" cycleinterval="1.2"></timesensor>
+            <colorinterpolator def="A_CI" key="0 1" keyvalue="1 0.2 0.2 0.2 0.4 1"></colorinterpolator>
+            <orientationinterpolator def="A_OI" key="0 0.5 1" keyvalue="0 1 0 0 0 1 0 3.14159 0 1 0 6.28318"></orientationinterpolator>
+            <route fromnode="A_Touch" fromfield="touchTime" tonode="A_T" tofield="set_startTime"></route>
+            <route fromnode="A_T" fromfield="fraction_changed" tonode="A_CI" tofield="set_fraction"></route>
+            <route fromnode="A_CI" fromfield="value_changed" tonode="A_M" tofield="set_diffuseColor"></route>
+            <route fromnode="A_T" fromfield="fraction_changed" tonode="A_OI" tofield="set_fraction"></route>
+            <route fromnode="A_OI" fromfield="value_changed" tonode="A_X" tofield="set_rotation"></route>
+            <transform def="B_X" translation="0 0 0">
+                <shape>
+                    <appearance>
+                        <material def="B_M" diffusecolor="0.2 1 0.3"></material>
+                    </appearance>
+                    <box size="2 2 2"></box>
+                </shape>
+                <touchsensor def="B_Touch" description="click me"></touchsensor>
+            </transform>
+            <timesensor def="B_T" cycleinterval="1.2"></timesensor>
+            <colorinterpolator def="B_CI" key="0 1" keyvalue="0.2 1 0.3 1 0.2 0.9"></colorinterpolator>
+            <orientationinterpolator def="B_OI" key="0 0.5 1" keyvalue="0 1 0 0 0 1 0 3.14159 0 1 0 6.28318"></orientationinterpolator>
+            <route fromnode="B_Touch" fromfield="touchTime" tonode="B_T" tofield="set_startTime"></route>
+            <route fromnode="B_T" fromfield="fraction_changed" tonode="B_CI" tofield="set_fraction"></route>
+            <route fromnode="B_CI" fromfield="value_changed" tonode="B_M" tofield="set_diffuseColor"></route>
+            <route fromnode="B_T" fromfield="fraction_changed" tonode="B_OI" tofield="set_fraction"></route>
+            <route fromnode="B_OI" fromfield="value_changed" tonode="B_X" tofield="set_rotation"></route>
+            <transform def="C_X" translation="3 0 0">
+                <shape>
+                    <appearance>
+                        <material def="C_M" diffusecolor="1 0.9 0.1"></material>
+                    </appearance>
+                    <box size="2 2 2"></box>
+                </shape>
+                <touchsensor def="C_Touch" description="click me"></touchsensor>
+            </transform>
+            <timesensor def="C_T" cycleinterval="1.2"></timesensor>
+            <colorinterpolator def="C_CI" key="0 1" keyvalue="1 0.9 0.1 0.1 0.9 0.9"></colorinterpolator>
+            <orientationinterpolator def="C_OI" key="0 0.5 1" keyvalue="0 1 0 0 0 1 0 3.14159 0 1 0 6.28318"></orientationinterpolator>
+            <route fromnode="C_Touch" fromfield="touchTime" tonode="C_T" tofield="set_startTime"></route>
+            <route fromnode="C_T" fromfield="fraction_changed" tonode="C_CI" tofield="set_fraction"></route>
+            <route fromnode="C_CI" fromfield="value_changed" tonode="C_M" tofield="set_diffuseColor"></route>
+            <route fromnode="C_T" fromfield="fraction_changed" tonode="C_OI" tofield="set_fraction"></route>
+            <route fromnode="C_OI" fromfield="value_changed" tonode="C_X" tofield="set_rotation"></route>
+        </scene>
+    </x3d>
+</body>
+</html>

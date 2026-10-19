@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bouncing Ball (X3DOM)</title>
+    <link rel="stylesheet" href="https://www.x3dom.org/download/1.8.2/x3dom.css">
+    <script src="https://www.x3dom.org/download/1.8.2/x3dom.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: #1a1a2e;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        h1 {
+            color: #e0e0e0;
+            margin-bottom: 16px;
+        }
+        x3d {
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+<div style="position:fixed;top:8px;left:8px;z-index:9;font:13px sans-serif;background:#000a;padding:4px 10px;border-radius:12px"><a style="color:#8cf" href="../index.html">&larr; all demos</a> &middot; X3DOM &middot; <a style="color:#8cf" href="bounce.xite.html">open in X_ITE</a></div>
+    <h1>Bouncing Ball (X3DOM)</h1>
+    <x3d width="100%" height="80vh">
+        <scene>
+            <viewpoint position="0 3 12" description="Front"></viewpoint>
+            <background skycolor="0.6 0.8 1"></background>
+            <transform translation="0 -0.1 0">
+                <shape>
+                    <appearance>
+                        <material diffusecolor="0.3 0.6 0.3"></material>
+                    </appearance>
+                    <box size="12 0.2 4"></box>
+                </shape>
+            </transform>
+            <transform def="Ball_X" translation="-4 0.5 0">
+                <transform def="Squash_X">
+                    <shape>
+                        <appearance>
+                            <material diffusecolor="1 0.2 0.2" specularcolor="1 1 1"></material>
+                        </appearance>
+                        <sphere radius="0.5"></sphere>
+                    </shape>
+                </transform>
+            </transform>
+            <timesensor def="Clock" cycleinterval="3" loop="true"></timesensor>
+            <positioninterpolator def="Path" key="0.000 0.050 0.100 0.150 0.200 0.250 0.300 0.350 0.400 0.450 0.500 0.550 0.600 0.650 0.700 0.750 0.800 0.850 0.900 0.950 1.000" keyvalue="-4.000 0.500 0 -3.600 1.940 0 -3.200 3.060 0 -2.800 3.860 0 -2.400 4.340 0 -2.000 4.500 0 -1.600 4.340 0 -1.200 3.860 0 -0.800 3.060 0 -0.400 1.940 0 0.000 0.500 0 0.400 1.940 0 0.800 3.060 0 1.200 3.860 0 1.600 4.340 0 2.000 4.500 0 2.400 4.340 0 2.800 3.860 0 3.200 3.060 0 3.600 1.940 0 4.000 0.500 0"></positioninterpolator>
+            <positioninterpolator def="Squash" key="0.000 0.050 0.100 0.150 0.200 0.250 0.300 0.350 0.400 0.450 0.500 0.550 0.600 0.650 0.700 0.750 0.800 0.850 0.900 0.950 1.000" keyvalue="1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000"></positioninterpolator>
+            <route fromnode="Clock" fromfield="fraction_changed" tonode="Path" tofield="set_fraction"></route>
+            <route fromnode="Path" fromfield="value_changed" tonode="Ball_X" tofield="set_translation"></route>
+            <route fromnode="Clock" fromfield="fraction_changed" tonode="Squash" tofield="set_fraction"></route>
+            <route fromnode="Squash" fromfield="value_changed" tonode="Squash_X" tofield="set_scale"></route>
+        </scene>
+    </x3d>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Newton's Cradle (X3DOM)</title>
+    <link rel="stylesheet" href="https://www.x3dom.org/download/1.8.2/x3dom.css">
+    <script src="https://www.x3dom.org/download/1.8.2/x3dom.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: #1a1a2e;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        h1 {
+            color: #e0e0e0;
+            margin-bottom: 16px;
+        }
+        x3d {
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+<div style="position:fixed;top:8px;left:8px;z-index:9;font:13px sans-serif;background:#000a;padding:4px 10px;border-radius:12px"><a style="color:#8cf" href="../index.html">&larr; all demos</a> &middot; X3DOM &middot; <a style="color:#8cf" href="cradle.xite.html">open in X_ITE</a></div>
+    <h1>Newton's Cradle (X3DOM)</h1>
+    <x3d width="100%" height="80vh">
+        <scene>
+            <background skycolor="0.12 0.1 0.2"></background>
+            <viewpoint position="0 3 11" orientation="1 0 0 -0.12" description="Front"></viewpoint>
+            <transform translation="0 -0.2 0">
+                <shape>
+                    <appearance>
+                        <material diffusecolor="0.25 0.18 0.12"></material>
+                    </appearance>
+                    <box size="10 0.4 5"></box>
+                </shape>
+            </transform>
+            <transform translation="-3.4 2.4 0">
+                <shape>
+                    <appearance>
+                        <material diffusecolor="0.7 0.7 0.75" specularcolor="1 1 1" shininess="0.6"></material>
+                    </appearance>
+                    <box size="0.2 4.8 0.2"></box>
+                </shape>
+            </transform>
+            <transform translation="3.4 2.4 0">
+                <shape>
+                    <appearance>
+                        <material diffusecolor="0.7 0.7 0.75" specularcolor="1 1 1" shininess="0.6"></material>
+                    </appearance>
+                    <box size="0.2 4.8 0.2"></box>
+                </shape>
+            </transform>
+            <transform translation="0 4.5 0">
+                <shape>
+                    <appearance>
+                        <material diffusecolor="0.7 0.7 0.75" specularcolor="1 1 1" shininess="0.6"></material>
+                    </appearance>
+                    <box size="7 0.2 0.2"></box>
+                </shape>
+            </transform>
+            <transform def="P0_X" translation="-2.0 4.5 0">
+                <transform translation="0 -1.75 0">
+                    <shape>
+                        <appearance>
+                            <material emissivecolor="0.6 0.6 0.6"></material>
+                        </appearance>
+                        <cylinder radius="0.02" height="3.5"></cylinder>
+                    </shape>
+                </transform>
+                <transform translation="0 -3.5 0">
+                    <shape>
+                        <appearance>
+                            <material diffusecolor="1.000 0.200 0.200" specularcolor="1 1 1" shininess="0.8"></material>
+                        </appearance>
+                        <sphere radius="0.5"></sphere>
+                    </shape>
+                </transform>
+            </transform>
+            <transform translation="-1.0 4.5 0">
+                <transform translation="0 -1.75 0">
+                    <shape>
+                        <appearance>
+                            <material emissivecolor="0.6 0.6 0.6"></material>
+                        </appearance>
+                        <cylinder radius="0.02" height="3.5"></cylinder>
+                    </shape>
+                </transform>
+                <transform translation="0 -3.5 0">
+                    <shape>
+                        <appearance>
+                            <material diffusecolor="0.840 1.000 0.200" specularcolor="1 1 1" shininess="0.8"></material>
+                        </appearance>
+                        <sphere radius="0.5"></sphere>
+                    </shape>
+                </transform>
+            </transform>
+            <transform translation="0.0 4.5 0">
+                <transform translation="0 -1.75 0">
+                    <shape>
+                        <appearance>
+                            <material emissivecolor="0.6 0.6 0.6"></material>
+                        </appearance>
+                        <cylinder radius="0.02" height="3.5"></cylinder>
+                    </shape>
+                </transform>
+                <transform translation="0 -3.5 0">
+                    <shape>
+                        <appearance>
+                            <material diffusecolor="0.200 1.000 0.520" specularcolor="1 1 1" shininess="0.8"></material>
+                        </appearance>
+                        <sphere radius="0.5"></sphere>
+                    </shape>
+                </transform>
+            </transform>
+            <transform translation="1.0 4.5 0">
+                <transform translation="0 -1.75 0">
+                    <shape>
+                        <appearance>
+                            <material emissivecolor="0.6 0.6 0.6"></material>
+                        </appearance>
+                        <cylinder radius="0.02" height="3.5"></cylinder>
+                    </shape>
+                </transform>
+                <transform translation="0 -3.5 0">
+                    <shape>
+                        <appearance>
+                            <material diffusecolor="0.200 0.520 1.000" specularcolor="1 1 1" shininess="0.8"></material>
+                        </appearance>
+                        <sphere radius="0.5"></sphere>
+                    </shape>
+                </transform>
+            </transform>
+            <transform def="P4_X" translation="2.0 4.5 0">
+                <transform translation="0 -1.75 0">
+                    <shape>
+                        <appearance>
+                            <material emissivecolor="0.6 0.6 0.6"></material>
+                        </appearance>
+                        <cylinder radius="0.02" height="3.5"></cylinder>
+                    </shape>
+                </transform>
+                <transform translation="0 -3.5 0">
+                    <shape>
+                        <appearance>
+                            <material diffusecolor="0.840 0.200 1.000" specularcolor="1 1 1" shininess="0.8"></material>
+                        </appearance>
+                        <sphere radius="0.5"></sphere>
+                    </shape>
+                </transform>
+            </transform>
+            <timesensor def="Clock" cycleinterval="2.4" loop="true"></timesensor>
+            <orientationinterpolator def="P0_I" key="0 0.021 0.042 0.062 0.083 0.104 0.125 0.146 0.167 0.188 0.208 0.229 0.25 0.271 0.292 0.312 0.333 0.354 0.375 0.396 0.417 0.438 0.458 0.479 0.5 0.521 0.542 0.562 0.583 0.604 0.625 0.646 0.667 0.688 0.708 0.729 0.75 0.771 0.792 0.812 0.833 0.854 0.875 0.896 0.917 0.938 0.958 0.979 1" keyvalue="0 0 1 -0.7500 0 0 1 -0.7436 0 0 1 -0.7244 0 0 1 -0.6929 0 0 1 -0.6495 0 0 1 -0.5950 0 0 1 -0.5303 0 0 1 -0.4566 0 0 1 -0.3750 0 0 1 -0.2870 0 0 1 -0.1941 0 0 1 -0.0979 0 0 1 -0.0000 0 0 1 -0.0000 0 0 1 -0.0000 0 0 1 -0.0000 0 0 1 -0.0000 0 0 1 -0.0000 0 0 1 -0.0000 0 0 1 -0.0000 0 0 1 -0.0000 0 0 1 -0.0000 0 0 1 -0.0000 0 0 1 -0.0000 0 0 1 -0.0000 0 0 1 -0.0000 0 0 1 -0.0000 0 0 1 -0.0000 0 0 1 -0.0000 0 0 1 -0.0000 0 0 1 -0.0000 0 0 1 -0.0000 0 0 1 -0.0000 0 0 1 -0.0000 0 0 1 -0.0000 0 0 1 -0.0000 0 0 1 -0.0000 0 0 1 -0.0979 0 0 1 -0.1941 0 0 1 -0.2870 0 0 1 -0.3750 0 0 1 -0.4566 0 0 1 -0.5303 0 0 1 -0.5950 0 0 1 -0.6495 0 0 1 -0.6929 0 0 1 -0.7244 0 0 1 -0.7436 0 0 1 -0.7500"></orientationinterpolator>
+            <route fromnode="Clock" fromfield="fraction_changed" tonode="P0_I" tofield="set_fraction"></route>
+            <route fromnode="P0_I" fromfield="value_changed" tonode="P0_X" tofield="set_rotation"></route>
+            <orientationinterpolator def="P4_I" key="0 0.021 0.042 0.062 0.083 0.104 0.125 0.146 0.167 0.188 0.208 0.229 0.25 0.271 0.292 0.312 0.333 0.354 0.375 0.396 0.417 0.438 0.458 0.479 0.5 0.521 0.542 0.562 0.583 0.604 0.625 0.646 0.667 0.688 0.708 0.729 0.75 0.771 0.792 0.812 0.833 0.854 0.875 0.896 0.917 0.938 0.958 0.979 1" keyvalue="0 0 1 0.0000 0 0 1 0.0000 0 0 1 0.0000 0 0 1 0.0000 0 0 1 0.0000 0 0 1 0.0000 0 0 1 0.0000 0 0 1 0.0000 0 0 1 0.0000 0 0 1 0.0000 0 0 1 0.0000 0 0 1 0.0000 0 0 1 0.0000 0 0 1 0.0979 0 0 1 0.1941 0 0 1 0.2870 0 0 1 0.3750 0 0 1 0.4566 0 0 1 0.5303 0 0 1 0.5950 0 0 1 0.6495 0 0 1 0.6929 0 0 1 0.7244 0 0 1 0.7436 0 0 1 0.7500 0 0 1 0.7436 0 0 1 0.7244 0 0 1 0.6929 0 0 1 0.6495 0 0 1 0.5950 0 0 1 0.5303 0 0 1 0.4566 0 0 1 0.3750 0 0 1 0.2870 0 0 1 0.1941 0 0 1 0.0979 0 0 1 0.0000 0 0 1 0.0000 0 0 1 0.0000 0 0 1 0.0000 0 0 1 0.0000 0 0 1 0.0000 0 0 1 0.0000 0 0 1 0.0000 0 0 1 0.0000 0 0 1 0.0000 0 0 1 0.0000 0 0 1 0.0000 0 0 1 0.0000"></orientationinterpolator>
+            <route fromnode="Clock" fromfield="fraction_changed" tonode="P4_I" tofield="set_fraction"></route>
+            <route fromnode="P4_I" fromfield="value_changed" tonode="P4_X" tofield="set_rotation"></route>
+        </scene>
+    </x3d>
+</body>
+</html>

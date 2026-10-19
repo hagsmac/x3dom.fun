@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Whack-a-Mole (X3DOM)</title>
+    <link rel="stylesheet" href="https://www.x3dom.org/download/1.8.2/x3dom.css">
+    <script src="https://www.x3dom.org/download/1.8.2/x3dom.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: #1a1a2e;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        h1 {
+            color: #e0e0e0;
+            margin-bottom: 16px;
+        }
+        x3d {
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+<div style="position:fixed;top:8px;left:8px;z-index:9;font:13px sans-serif;background:#000a;padding:4px 10px;border-radius:12px"><a style="color:#8cf" href="../index.html">&larr; all demos</a> &middot; X3DOM &middot; <a style="color:#8cf" href="whack.xite.html">open in X_ITE</a></div>
+    <h1>Whack-a-Mole (X3DOM)</h1>
+    <x3d width="100%" height="80vh">
+        <scene>
+            <background skycolor="0.5 0.8 1"></background>
+            <viewpoint position="0 9 9" orientation="1 0 0 -0.85" description="Lawn"></viewpoint>
+            <transform translation="0 -0.3 0">
+                <shape>
+                    <appearance>
+                        <material diffusecolor="0.2 0.6 0.2"></material>
+                    </appearance>
+                    <box size="11 0.6 11"></box>
+                </shape>
+            </transform>
+            <transform translation="-3 0.01 -3">
+                <shape>
+                    <appearance>
+                        <material diffusecolor="0.05 0.03 0.02"></material>
+                    </appearance>
+                    <cylinder radius="1.1" height="0.02"></cylinder>
+                </shape>
+            </transform>
+            <transform def="M0_Pop" translation="-3 -1.1 -3">
+                <transform def="M0_Squash">
+                    <shape>
+                        <appearance>
+                            <material def="M0_Mat" diffusecolor="0.55 0.33 0.18"></material>
+                        </appearance>
+                        <sphere radius="0.8"></sphere>
+                    </shape>
+                    <transform translation="-0.3 0.3 0.62">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 1 1"></material>
+                            </appearance>
+                            <sphere radius="0.2"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0.3 0.3 0.62">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 1 1"></material>
+                            </appearance>
+                            <sphere radius="0.2"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="-0.3 0.3 0.8">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0 0 0"></material>
+                            </appearance>
+                            <sphere radius="0.09"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0.3 0.3 0.8">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0 0 0"></material>
+                            </appearance>
+                            <sphere radius="0.09"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0 0 0.78">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 0.5 0.6"></material>
+                            </appearance>
+                            <sphere radius="0.17"></sphere>
+                        </shape>
+                    </transform>
+                    <touchsensor def="M0_Touch" description="whack!"></touchsensor>
+                </transform>
+            </transform>
+            <timesensor def="M0_PopT" cycleinterval="3.1" loop="true"></timesensor>
+            <positioninterpolator def="M0_PopI" key="0 0.5 0.58 0.78 0.86 1" keyvalue="-3 -1.1 -3 -3 -1.1 -3 -3 0.25 -3 -3 0.25 -3 -3 -1.1 -3 -3 -1.1 -3"></positioninterpolator>
+            <route fromnode="M0_PopT" fromfield="fraction_changed" tonode="M0_PopI" tofield="set_fraction"></route>
+            <route fromnode="M0_PopI" fromfield="value_changed" tonode="M0_Pop" tofield="set_translation"></route>
+            <timesensor def="M0_BonkT" cycleinterval="0.7"></timesensor>
+            <positioninterpolator def="M0_BonkI" key="0 0.15 0.35 0.6 1" keyvalue="1 1 1 1.5 0.35 1.5 0.8 1.25 0.8 1.1 0.9 1.1 1 1 1"></positioninterpolator>
+            <colorinterpolator def="M0_BonkC" key="0 0.15 0.7 1" keyvalue="0.55 0.33 0.18 1 0.1 0.1 1 0.4 0.4 0.55 0.33 0.18"></colorinterpolator>
+            <route fromnode="M0_Touch" fromfield="touchTime" tonode="M0_BonkT" tofield="set_startTime"></route>
+            <route fromnode="M0_BonkT" fromfield="fraction_changed" tonode="M0_BonkI" tofield="set_fraction"></route>
+            <route fromnode="M0_BonkI" fromfield="value_changed" tonode="M0_Squash" tofield="set_scale"></route>
+            <route fromnode="M0_BonkT" fromfield="fraction_changed" tonode="M0_BonkC" tofield="set_fraction"></route>
+            <route fromnode="M0_BonkC" fromfield="value_changed" tonode="M0_Mat" tofield="set_diffuseColor"></route>
+            <transform translation="0 0.01 -3">
+                <shape>
+                    <appearance>
+                        <material diffusecolor="0.05 0.03 0.02"></material>
+                    </appearance>
+                    <cylinder radius="1.1" height="0.02"></cylinder>
+                </shape>
+            </transform>
+            <transform def="M1_Pop" translation="0 -1.1 -3">
+                <transform def="M1_Squash">
+                    <shape>
+                        <appearance>
+                            <material def="M1_Mat" diffusecolor="0.55 0.33 0.18"></material>
+                        </appearance>
+                        <sphere radius="0.8"></sphere>
+                    </shape>
+                    <transform translation="-0.3 0.3 0.62">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 1 1"></material>
+                            </appearance>
+                            <sphere radius="0.2"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0.3 0.3 0.62">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 1 1"></material>
+                            </appearance>
+                            <sphere radius="0.2"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="-0.3 0.3 0.8">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0 0 0"></material>
+                            </appearance>
+                            <sphere radius="0.09"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0.3 0.3 0.8">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0 0 0"></material>
+                            </appearance>
+                            <sphere radius="0.09"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0 0 0.78">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 0.5 0.6"></material>
+                            </appearance>
+                            <sphere radius="0.17"></sphere>
+                        </shape>
+                    </transform>
+                    <touchsensor def="M1_Touch" description="whack!"></touchsensor>
+                </transform>
+            </transform>
+            <timesensor def="M1_PopT" cycleinterval="3.7" loop="true"></timesensor>
+            <positioninterpolator def="M1_PopI" key="0 0.5 0.58 0.78 0.86 1" keyvalue="0 -1.1 -3 0 -1.1 -3 0 0.25 -3 0 0.25 -3 0 -1.1 -3 0 -1.1 -3"></positioninterpolator>
+            <route fromnode="M1_PopT" fromfield="fraction_changed" tonode="M1_PopI" tofield="set_fraction"></route>
+            <route fromnode="M1_PopI" fromfield="value_changed" tonode="M1_Pop" tofield="set_translation"></route>
+            <timesensor def="M1_BonkT" cycleinterval="0.7"></timesensor>
+            <positioninterpolator def="M1_BonkI" key="0 0.15 0.35 0.6 1" keyvalue="1 1 1 1.5 0.35 1.5 0.8 1.25 0.8 1.1 0.9 1.1 1 1 1"></positioninterpolator>
+            <colorinterpolator def="M1_BonkC" key="0 0.15 0.7 1" keyvalue="0.55 0.33 0.18 1 0.1 0.1 1 0.4 0.4 0.55 0.33 0.18"></colorinterpolator>
+            <route fromnode="M1_Touch" fromfield="touchTime" tonode="M1_BonkT" tofield="set_startTime"></route>
+            <route fromnode="M1_BonkT" fromfield="fraction_changed" tonode="M1_BonkI" tofield="set_fraction"></route>
+            <route fromnode="M1_BonkI" fromfield="value_changed" tonode="M1_Squash" tofield="set_scale"></route>
+            <route fromnode="M1_BonkT" fromfield="fraction_changed" tonode="M1_BonkC" tofield="set_fraction"></route>
+            <route fromnode="M1_BonkC" fromfield="value_changed" tonode="M1_Mat" tofield="set_diffuseColor"></route>
+            <transform translation="3 0.01 -3">
+                <shape>
+                    <appearance>
+                        <material diffusecolor="0.05 0.03 0.02"></material>
+                    </appearance>
+                    <cylinder radius="1.1" height="0.02"></cylinder>
+                </shape>
+            </transform>
+            <transform def="M2_Pop" translation="3 -1.1 -3">
+                <transform def="M2_Squash">
+                    <shape>
+                        <appearance>
+                            <material def="M2_Mat" diffusecolor="0.55 0.33 0.18"></material>
+                        </appearance>
+                        <sphere radius="0.8"></sphere>
+                    </shape>
+                    <transform translation="-0.3 0.3 0.62">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 1 1"></material>
+                            </appearance>
+                            <sphere radius="0.2"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0.3 0.3 0.62">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 1 1"></material>
+                            </appearance>
+                            <sphere radius="0.2"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="-0.3 0.3 0.8">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0 0 0"></material>
+                            </appearance>
+                            <sphere radius="0.09"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0.3 0.3 0.8">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0 0 0"></material>
+                            </appearance>
+                            <sphere radius="0.09"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0 0 0.78">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 0.5 0.6"></material>
+                            </appearance>
+                            <sphere radius="0.17"></sphere>
+                        </shape>
+                    </transform>
+                    <touchsensor def="M2_Touch" description="whack!"></touchsensor>
+                </transform>
+            </transform>
+            <timesensor def="M2_PopT" cycleinterval="2.7" loop="true"></timesensor>
+            <positioninterpolator def="M2_PopI" key="0 0.5 0.58 0.78 0.86 1" keyvalue="3 -1.1 -3 3 -1.1 -3 3 0.25 -3 3 0.25 -3 3 -1.1 -3 3 -1.1 -3"></positioninterpolator>
+            <route fromnode="M2_PopT" fromfield="fraction_changed" tonode="M2_PopI" tofield="set_fraction"></route>
+            <route fromnode="M2_PopI" fromfield="value_changed" tonode="M2_Pop" tofield="set_translation"></route>
+            <timesensor def="M2_BonkT" cycleinterval="0.7"></timesensor>
+            <positioninterpolator def="M2_BonkI" key="0 0.15 0.35 0.6 1" keyvalue="1 1 1 1.5 0.35 1.5 0.8 1.25 0.8 1.1 0.9 1.1 1 1 1"></positioninterpolator>
+            <colorinterpolator def="M2_BonkC" key="0 0.15 0.7 1" keyvalue="0.55 0.33 0.18 1 0.1 0.1 1 0.4 0.4 0.55 0.33 0.18"></colorinterpolator>
+            <route fromnode="M2_Touch" fromfield="touchTime" tonode="M2_BonkT" tofield="set_startTime"></route>
+            <route fromnode="M2_BonkT" fromfield="fraction_changed" tonode="M2_BonkI" tofield="set_fraction"></route>
+            <route fromnode="M2_BonkI" fromfield="value_changed" tonode="M2_Squash" tofield="set_scale"></route>
+            <route fromnode="M2_BonkT" fromfield="fraction_changed" tonode="M2_BonkC" tofield="set_fraction"></route>
+            <route fromnode="M2_BonkC" fromfield="value_changed" tonode="M2_Mat" tofield="set_diffuseColor"></route>
+            <transform translation="-3 0.01 0">
+                <shape>
+                    <appearance>
+                        <material diffusecolor="0.05 0.03 0.02"></material>
+                    </appearance>
+                    <cylinder radius="1.1" height="0.02"></cylinder>
+                </shape>
+            </transform>
+            <transform def="M3_Pop" translation="-3 -1.1 0">
+                <transform def="M3_Squash">
+                    <shape>
+                        <appearance>
+                            <material def="M3_Mat" diffusecolor="0.55 0.33 0.18"></material>
+                        </appearance>
+                        <sphere radius="0.8"></sphere>
+                    </shape>
+                    <transform translation="-0.3 0.3 0.62">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 1 1"></material>
+                            </appearance>
+                            <sphere radius="0.2"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0.3 0.3 0.62">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 1 1"></material>
+                            </appearance>
+                            <sphere radius="0.2"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="-0.3 0.3 0.8">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0 0 0"></material>
+                            </appearance>
+                            <sphere radius="0.09"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0.3 0.3 0.8">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0 0 0"></material>
+                            </appearance>
+                            <sphere radius="0.09"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0 0 0.78">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 0.5 0.6"></material>
+                            </appearance>
+                            <sphere radius="0.17"></sphere>
+                        </shape>
+                    </transform>
+                    <touchsensor def="M3_Touch" description="whack!"></touchsensor>
+                </transform>
+            </transform>
+            <timesensor def="M3_PopT" cycleinterval="4.1" loop="true"></timesensor>
+            <positioninterpolator def="M3_PopI" key="0 0.5 0.58 0.78 0.86 1" keyvalue="-3 -1.1 0 -3 -1.1 0 -3 0.25 0 -3 0.25 0 -3 -1.1 0 -3 -1.1 0"></positioninterpolator>
+            <route fromnode="M3_PopT" fromfield="fraction_changed" tonode="M3_PopI" tofield="set_fraction"></route>
+            <route fromnode="M3_PopI" fromfield="value_changed" tonode="M3_Pop" tofield="set_translation"></route>
+            <timesensor def="M3_BonkT" cycleinterval="0.7"></timesensor>
+            <positioninterpolator def="M3_BonkI" key="0 0.15 0.35 0.6 1" keyvalue="1 1 1 1.5 0.35 1.5 0.8 1.25 0.8 1.1 0.9 1.1 1 1 1"></positioninterpolator>
+            <colorinterpolator def="M3_BonkC" key="0 0.15 0.7 1" keyvalue="0.55 0.33 0.18 1 0.1 0.1 1 0.4 0.4 0.55 0.33 0.18"></colorinterpolator>
+            <route fromnode="M3_Touch" fromfield="touchTime" tonode="M3_BonkT" tofield="set_startTime"></route>
+            <route fromnode="M3_BonkT" fromfield="fraction_changed" tonode="M3_BonkI" tofield="set_fraction"></route>
+            <route fromnode="M3_BonkI" fromfield="value_changed" tonode="M3_Squash" tofield="set_scale"></route>
+            <route fromnode="M3_BonkT" fromfield="fraction_changed" tonode="M3_BonkC" tofield="set_fraction"></route>
+            <route fromnode="M3_BonkC" fromfield="value_changed" tonode="M3_Mat" tofield="set_diffuseColor"></route>
+            <transform translation="0 0.01 0">
+                <shape>
+                    <appearance>
+                        <material diffusecolor="0.05 0.03 0.02"></material>
+                    </appearance>
+                    <cylinder radius="1.1" height="0.02"></cylinder>
+                </shape>
+            </transform>
+            <transform def="M4_Pop" translation="0 -1.1 0">
+                <transform def="M4_Squash">
+                    <shape>
+                        <appearance>
+                            <material def="M4_Mat" diffusecolor="0.55 0.33 0.18"></material>
+                        </appearance>
+                        <sphere radius="0.8"></sphere>
+                    </shape>
+                    <transform translation="-0.3 0.3 0.62">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 1 1"></material>
+                            </appearance>
+                            <sphere radius="0.2"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0.3 0.3 0.62">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 1 1"></material>
+                            </appearance>
+                            <sphere radius="0.2"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="-0.3 0.3 0.8">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0 0 0"></material>
+                            </appearance>
+                            <sphere radius="0.09"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0.3 0.3 0.8">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0 0 0"></material>
+                            </appearance>
+                            <sphere radius="0.09"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0 0 0.78">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 0.5 0.6"></material>
+                            </appearance>
+                            <sphere radius="0.17"></sphere>
+                        </shape>
+                    </transform>
+                    <touchsensor def="M4_Touch" description="whack!"></touchsensor>
+                </transform>
+            </transform>
+            <timesensor def="M4_PopT" cycleinterval="3.3" loop="true"></timesensor>
+            <positioninterpolator def="M4_PopI" key="0 0.5 0.58 0.78 0.86 1" keyvalue="0 -1.1 0 0 -1.1 0 0 0.25 0 0 0.25 0 0 -1.1 0 0 -1.1 0"></positioninterpolator>
+            <route fromnode="M4_PopT" fromfield="fraction_changed" tonode="M4_PopI" tofield="set_fraction"></route>
+            <route fromnode="M4_PopI" fromfield="value_changed" tonode="M4_Pop" tofield="set_translation"></route>
+            <timesensor def="M4_BonkT" cycleinterval="0.7"></timesensor>
+            <positioninterpolator def="M4_BonkI" key="0 0.15 0.35 0.6 1" keyvalue="1 1 1 1.5 0.35 1.5 0.8 1.25 0.8 1.1 0.9 1.1 1 1 1"></positioninterpolator>
+            <colorinterpolator def="M4_BonkC" key="0 0.15 0.7 1" keyvalue="0.55 0.33 0.18 1 0.1 0.1 1 0.4 0.4 0.55 0.33 0.18"></colorinterpolator>
+            <route fromnode="M4_Touch" fromfield="touchTime" tonode="M4_BonkT" tofield="set_startTime"></route>
+            <route fromnode="M4_BonkT" fromfield="fraction_changed" tonode="M4_BonkI" tofield="set_fraction"></route>
+            <route fromnode="M4_BonkI" fromfield="value_changed" tonode="M4_Squash" tofield="set_scale"></route>
+            <route fromnode="M4_BonkT" fromfield="fraction_changed" tonode="M4_BonkC" tofield="set_fraction"></route>
+            <route fromnode="M4_BonkC" fromfield="value_changed" tonode="M4_Mat" tofield="set_diffuseColor"></route>
+            <transform translation="3 0.01 0">
+                <shape>
+                    <appearance>
+                        <material diffusecolor="0.05 0.03 0.02"></material>
+                    </appearance>
+                    <cylinder radius="1.1" height="0.02"></cylinder>
+                </shape>
+            </transform>
+            <transform def="M5_Pop" translation="3 -1.1 0">
+                <transform def="M5_Squash">
+                    <shape>
+                        <appearance>
+                            <material def="M5_Mat" diffusecolor="0.55 0.33 0.18"></material>
+                        </appearance>
+                        <sphere radius="0.8"></sphere>
+                    </shape>
+                    <transform translation="-0.3 0.3 0.62">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 1 1"></material>
+                            </appearance>
+                            <sphere radius="0.2"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0.3 0.3 0.62">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 1 1"></material>
+                            </appearance>
+                            <sphere radius="0.2"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="-0.3 0.3 0.8">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0 0 0"></material>
+                            </appearance>
+                            <sphere radius="0.09"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0.3 0.3 0.8">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0 0 0"></material>
+                            </appearance>
+                            <sphere radius="0.09"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0 0 0.78">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 0.5 0.6"></material>
+                            </appearance>
+                            <sphere radius="0.17"></sphere>
+                        </shape>
+                    </transform>
+                    <touchsensor def="M5_Touch" description="whack!"></touchsensor>
+                </transform>
+            </transform>
+            <timesensor def="M5_PopT" cycleinterval="2.9" loop="true"></timesensor>
+            <positioninterpolator def="M5_PopI" key="0 0.5 0.58 0.78 0.86 1" keyvalue="3 -1.1 0 3 -1.1 0 3 0.25 0 3 0.25 0 3 -1.1 0 3 -1.1 0"></positioninterpolator>
+            <route fromnode="M5_PopT" fromfield="fraction_changed" tonode="M5_PopI" tofield="set_fraction"></route>
+            <route fromnode="M5_PopI" fromfield="value_changed" tonode="M5_Pop" tofield="set_translation"></route>
+            <timesensor def="M5_BonkT" cycleinterval="0.7"></timesensor>
+            <positioninterpolator def="M5_BonkI" key="0 0.15 0.35 0.6 1" keyvalue="1 1 1 1.5 0.35 1.5 0.8 1.25 0.8 1.1 0.9 1.1 1 1 1"></positioninterpolator>
+            <colorinterpolator def="M5_BonkC" key="0 0.15 0.7 1" keyvalue="0.55 0.33 0.18 1 0.1 0.1 1 0.4 0.4 0.55 0.33 0.18"></colorinterpolator>
+            <route fromnode="M5_Touch" fromfield="touchTime" tonode="M5_BonkT" tofield="set_startTime"></route>
+            <route fromnode="M5_BonkT" fromfield="fraction_changed" tonode="M5_BonkI" tofield="set_fraction"></route>
+            <route fromnode="M5_BonkI" fromfield="value_changed" tonode="M5_Squash" tofield="set_scale"></route>
+            <route fromnode="M5_BonkT" fromfield="fraction_changed" tonode="M5_BonkC" tofield="set_fraction"></route>
+            <route fromnode="M5_BonkC" fromfield="value_changed" tonode="M5_Mat" tofield="set_diffuseColor"></route>
+            <transform translation="-3 0.01 3">
+                <shape>
+                    <appearance>
+                        <material diffusecolor="0.05 0.03 0.02"></material>
+                    </appearance>
+                    <cylinder radius="1.1" height="0.02"></cylinder>
+                </shape>
+            </transform>
+            <transform def="M6_Pop" translation="-3 -1.1 3">
+                <transform def="M6_Squash">
+                    <shape>
+                        <appearance>
+                            <material def="M6_Mat" diffusecolor="0.55 0.33 0.18"></material>
+                        </appearance>
+                        <sphere radius="0.8"></sphere>
+                    </shape>
+                    <transform translation="-0.3 0.3 0.62">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 1 1"></material>
+                            </appearance>
+                            <sphere radius="0.2"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0.3 0.3 0.62">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 1 1"></material>
+                            </appearance>
+                            <sphere radius="0.2"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="-0.3 0.3 0.8">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0 0 0"></material>
+                            </appearance>
+                            <sphere radius="0.09"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0.3 0.3 0.8">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0 0 0"></material>
+                            </appearance>
+                            <sphere radius="0.09"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0 0 0.78">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 0.5 0.6"></material>
+                            </appearance>
+                            <sphere radius="0.17"></sphere>
+                        </shape>
+                    </transform>
+                    <touchsensor def="M6_Touch" description="whack!"></touchsensor>
+                </transform>
+            </transform>
+            <timesensor def="M6_PopT" cycleinterval="3.9" loop="true"></timesensor>
+            <positioninterpolator def="M6_PopI" key="0 0.5 0.58 0.78 0.86 1" keyvalue="-3 -1.1 3 -3 -1.1 3 -3 0.25 3 -3 0.25 3 -3 -1.1 3 -3 -1.1 3"></positioninterpolator>
+            <route fromnode="M6_PopT" fromfield="fraction_changed" tonode="M6_PopI" tofield="set_fraction"></route>
+            <route fromnode="M6_PopI" fromfield="value_changed" tonode="M6_Pop" tofield="set_translation"></route>
+            <timesensor def="M6_BonkT" cycleinterval="0.7"></timesensor>
+            <positioninterpolator def="M6_BonkI" key="0 0.15 0.35 0.6 1" keyvalue="1 1 1 1.5 0.35 1.5 0.8 1.25 0.8 1.1 0.9 1.1 1 1 1"></positioninterpolator>
+            <colorinterpolator def="M6_BonkC" key="0 0.15 0.7 1" keyvalue="0.55 0.33 0.18 1 0.1 0.1 1 0.4 0.4 0.55 0.33 0.18"></colorinterpolator>
+            <route fromnode="M6_Touch" fromfield="touchTime" tonode="M6_BonkT" tofield="set_startTime"></route>
+            <route fromnode="M6_BonkT" fromfield="fraction_changed" tonode="M6_BonkI" tofield="set_fraction"></route>
+            <route fromnode="M6_BonkI" fromfield="value_changed" tonode="M6_Squash" tofield="set_scale"></route>
+            <route fromnode="M6_BonkT" fromfield="fraction_changed" tonode="M6_BonkC" tofield="set_fraction"></route>
+            <route fromnode="M6_BonkC" fromfield="value_changed" tonode="M6_Mat" tofield="set_diffuseColor"></route>
+            <transform translation="0 0.01 3">
+                <shape>
+                    <appearance>
+                        <material diffusecolor="0.05 0.03 0.02"></material>
+                    </appearance>
+                    <cylinder radius="1.1" height="0.02"></cylinder>
+                </shape>
+            </transform>
+            <transform def="M7_Pop" translation="0 -1.1 3">
+                <transform def="M7_Squash">
+                    <shape>
+                        <appearance>
+                            <material def="M7_Mat" diffusecolor="0.55 0.33 0.18"></material>
+                        </appearance>
+                        <sphere radius="0.8"></sphere>
+                    </shape>
+                    <transform translation="-0.3 0.3 0.62">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 1 1"></material>
+                            </appearance>
+                            <sphere radius="0.2"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0.3 0.3 0.62">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 1 1"></material>
+                            </appearance>
+                            <sphere radius="0.2"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="-0.3 0.3 0.8">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0 0 0"></material>
+                            </appearance>
+                            <sphere radius="0.09"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0.3 0.3 0.8">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0 0 0"></material>
+                            </appearance>
+                            <sphere radius="0.09"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0 0 0.78">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 0.5 0.6"></material>
+                            </appearance>
+                            <sphere radius="0.17"></sphere>
+                        </shape>
+                    </transform>
+                    <touchsensor def="M7_Touch" description="whack!"></touchsensor>
+                </transform>
+            </transform>
+            <timesensor def="M7_PopT" cycleinterval="3.5" loop="true"></timesensor>
+            <positioninterpolator def="M7_PopI" key="0 0.5 0.58 0.78 0.86 1" keyvalue="0 -1.1 3 0 -1.1 3 0 0.25 3 0 0.25 3 0 -1.1 3 0 -1.1 3"></positioninterpolator>
+            <route fromnode="M7_PopT" fromfield="fraction_changed" tonode="M7_PopI" tofield="set_fraction"></route>
+            <route fromnode="M7_PopI" fromfield="value_changed" tonode="M7_Pop" tofield="set_translation"></route>
+            <timesensor def="M7_BonkT" cycleinterval="0.7"></timesensor>
+            <positioninterpolator def="M7_BonkI" key="0 0.15 0.35 0.6 1" keyvalue="1 1 1 1.5 0.35 1.5 0.8 1.25 0.8 1.1 0.9 1.1 1 1 1"></positioninterpolator>
+            <colorinterpolator def="M7_BonkC" key="0 0.15 0.7 1" keyvalue="0.55 0.33 0.18 1 0.1 0.1 1 0.4 0.4 0.55 0.33 0.18"></colorinterpolator>
+            <route fromnode="M7_Touch" fromfield="touchTime" tonode="M7_BonkT" tofield="set_startTime"></route>
+            <route fromnode="M7_BonkT" fromfield="fraction_changed" tonode="M7_BonkI" tofield="set_fraction"></route>
+            <route fromnode="M7_BonkI" fromfield="value_changed" tonode="M7_Squash" tofield="set_scale"></route>
+            <route fromnode="M7_BonkT" fromfield="fraction_changed" tonode="M7_BonkC" tofield="set_fraction"></route>
+            <route fromnode="M7_BonkC" fromfield="value_changed" tonode="M7_Mat" tofield="set_diffuseColor"></route>
+            <transform translation="3 0.01 3">
+                <shape>
+                    <appearance>
+                        <material diffusecolor="0.05 0.03 0.02"></material>
+                    </appearance>
+                    <cylinder radius="1.1" height="0.02"></cylinder>
+                </shape>
+            </transform>
+            <transform def="M8_Pop" translation="3 -1.1 3">
+                <transform def="M8_Squash">
+                    <shape>
+                        <appearance>
+                            <material def="M8_Mat" diffusecolor="0.55 0.33 0.18"></material>
+                        </appearance>
+                        <sphere radius="0.8"></sphere>
+                    </shape>
+                    <transform translation="-0.3 0.3 0.62">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 1 1"></material>
+                            </appearance>
+                            <sphere radius="0.2"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0.3 0.3 0.62">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 1 1"></material>
+                            </appearance>
+                            <sphere radius="0.2"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="-0.3 0.3 0.8">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0 0 0"></material>
+                            </appearance>
+                            <sphere radius="0.09"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0.3 0.3 0.8">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="0 0 0"></material>
+                            </appearance>
+                            <sphere radius="0.09"></sphere>
+                        </shape>
+                    </transform>
+                    <transform translation="0 0 0.78">
+                        <shape>
+                            <appearance>
+                                <material diffusecolor="1 0.5 0.6"></material>
+                            </appearance>
+                            <sphere radius="0.17"></sphere>
+                        </shape>
+                    </transform>
+                    <touchsensor def="M8_Touch" description="whack!"></touchsensor>
+                </transform>
+            </transform>
+            <timesensor def="M8_PopT" cycleinterval="4.3" loop="true"></timesensor>
+            <positioninterpolator def="M8_PopI" key="0 0.5 0.58 0.78 0.86 1" keyvalue="3 -1.1 3 3 -1.1 3 3 0.25 3 3 0.25 3 3 -1.1 3 3 -1.1 3"></positioninterpolator>
+            <route fromnode="M8_PopT" fromfield="fraction_changed" tonode="M8_PopI" tofield="set_fraction"></route>
+            <route fromnode="M8_PopI" fromfield="value_changed" tonode="M8_Pop" tofield="set_translation"></route>
+            <timesensor def="M8_BonkT" cycleinterval="0.7"></timesensor>
+            <positioninterpolator def="M8_BonkI" key="0 0.15 0.35 0.6 1" keyvalue="1 1 1 1.5 0.35 1.5 0.8 1.25 0.8 1.1 0.9 1.1 1 1 1"></positioninterpolator>
+            <colorinterpolator def="M8_BonkC" key="0 0.15 0.7 1" keyvalue="0.55 0.33 0.18 1 0.1 0.1 1 0.4 0.4 0.55 0.33 0.18"></colorinterpolator>
+            <route fromnode="M8_Touch" fromfield="touchTime" tonode="M8_BonkT" tofield="set_startTime"></route>
+            <route fromnode="M8_BonkT" fromfield="fraction_changed" tonode="M8_BonkI" tofield="set_fraction"></route>
+            <route fromnode="M8_BonkI" fromfield="value_changed" tonode="M8_Squash" tofield="set_scale"></route>
+            <route fromnode="M8_BonkT" fromfield="fraction_changed" tonode="M8_BonkC" tofield="set_fraction"></route>
+            <route fromnode="M8_BonkC" fromfield="value_changed" tonode="M8_Mat" tofield="set_diffuseColor"></route>
+        </scene>
+    </x3d>
+</body>
+</html>

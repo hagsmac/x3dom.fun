@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile="Immersive" version="4.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="https://www.web3d.org/specifications/x3d-4.0.xsd">
+<head><meta name="title" content="Click Me"/></head>
+<Scene>
+<Viewpoint position="0 0 10" description="Front"/>
+<Background skyColor="0.1 0.1 0.15"/>
+<Transform DEF="A_X" translation="-3 0 0"><Shape><Appearance><Material DEF="A_M" diffuseColor="1 0.2 0.2"/></Appearance><Box size="2 2 2"/></Shape><TouchSensor DEF="A_Touch" description="click me"/></Transform>
+<TimeSensor DEF="A_T" cycleInterval="1.2"/>
+<ColorInterpolator DEF="A_CI" key="0 1" keyValue="1 0.2 0.2 0.2 0.4 1"/>
+<OrientationInterpolator DEF="A_OI" key="0 0.5 1" keyValue="0 1 0 0 0 1 0 3.14159 0 1 0 6.28318"/>
+<ROUTE fromNode="A_Touch" fromField="touchTime" toNode="A_T" toField="set_startTime"/>
+<ROUTE fromNode="A_T" fromField="fraction_changed" toNode="A_CI" toField="set_fraction"/>
+<ROUTE fromNode="A_CI" fromField="value_changed" toNode="A_M" toField="set_diffuseColor"/>
+<ROUTE fromNode="A_T" fromField="fraction_changed" toNode="A_OI" toField="set_fraction"/>
+<ROUTE fromNode="A_OI" fromField="value_changed" toNode="A_X" toField="set_rotation"/>
+<Transform DEF="B_X" translation="0 0 0"><Shape><Appearance><Material DEF="B_M" diffuseColor="0.2 1 0.3"/></Appearance><Box size="2 2 2"/></Shape><TouchSensor DEF="B_Touch" description="click me"/></Transform>
+<TimeSensor DEF="B_T" cycleInterval="1.2"/>
+<ColorInterpolator DEF="B_CI" key="0 1" keyValue="0.2 1 0.3 1 0.2 0.9"/>
+<OrientationInterpolator DEF="B_OI" key="0 0.5 1" keyValue="0 1 0 0 0 1 0 3.14159 0 1 0 6.28318"/>
+<ROUTE fromNode="B_Touch" fromField="touchTime" toNode="B_T" toField="set_startTime"/>
+<ROUTE fromNode="B_T" fromField="fraction_changed" toNode="B_CI" toField="set_fraction"/>
+<ROUTE fromNode="B_CI" fromField="value_changed" toNode="B_M" toField="set_diffuseColor"/>
+<ROUTE fromNode="B_T" fromField="fraction_changed" toNode="B_OI" toField="set_fraction"/>
+<ROUTE fromNode="B_OI" fromField="value_changed" toNode="B_X" toField="set_rotation"/>
+<Transform DEF="C_X" translation="3 0 0"><Shape><Appearance><Material DEF="C_M" diffuseColor="1 0.9 0.1"/></Appearance><Box size="2 2 2"/></Shape><TouchSensor DEF="C_Touch" description="click me"/></Transform>
+<TimeSensor DEF="C_T" cycleInterval="1.2"/>
+<ColorInterpolator DEF="C_CI" key="0 1" keyValue="1 0.9 0.1 0.1 0.9 0.9"/>
+<OrientationInterpolator DEF="C_OI" key="0 0.5 1" keyValue="0 1 0 0 0 1 0 3.14159 0 1 0 6.28318"/>
+<ROUTE fromNode="C_Touch" fromField="touchTime" toNode="C_T" toField="set_startTime"/>
+<ROUTE fromNode="C_T" fromField="fraction_changed" toNode="C_CI" toField="set_fraction"/>
+<ROUTE fromNode="C_CI" fromField="value_changed" toNode="C_M" toField="set_diffuseColor"/>
+<ROUTE fromNode="C_T" fromField="fraction_changed" toNode="C_OI" toField="set_fraction"/>
+<ROUTE fromNode="C_OI" fromField="value_changed" toNode="C_X" toField="set_rotation"/>
+</Scene>
+</X3D>

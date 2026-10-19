@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tiny Solar System (X3DOM)</title>
+    <link rel="stylesheet" href="https://www.x3dom.org/download/1.8.2/x3dom.css">
+    <script src="https://www.x3dom.org/download/1.8.2/x3dom.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: #1a1a2e;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        h1 {
+            color: #e0e0e0;
+            margin-bottom: 16px;
+        }
+        x3d {
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+<div style="position:fixed;top:8px;left:8px;z-index:9;font:13px sans-serif;background:#000a;padding:4px 10px;border-radius:12px"><a style="color:#8cf" href="../index.html">&larr; all demos</a> &middot; X3DOM &middot; <a style="color:#8cf" href="solar.xite.html">open in X_ITE</a></div>
+    <h1>Tiny Solar System (X3DOM)</h1>
+    <x3d width="100%" height="80vh">
+        <scene>
+            <navigationinfo type="&quot;EXAMINE&quot; &quot;ANY&quot;"></navigationinfo>
+            <background skycolor="0.02 0.02 0.08"></background>
+            <viewpoint position="0 9 14" orientation="1 0 0 -0.6" description="Overview"></viewpoint>
+            <transform def="Sun_X">
+                <shape>
+                    <appearance>
+                        <material diffusecolor="1 0.8 0.1" emissivecolor="1 0.6 0"></material>
+                    </appearance>
+                    <sphere radius="1.2"></sphere>
+                </shape>
+            </transform>
+            <timesensor def="Sun_T" cycleinterval="20" loop="true"></timesensor>
+            <orientationinterpolator def="Sun_I" key="0 0.25 0.5 0.75 1" keyvalue="0 1 0 0.00000 0 1 0 1.57080 0 1 0 3.14159 0 1 0 4.71239 0 1 0 6.28319"></orientationinterpolator>
+            <route fromnode="Sun_T" fromfield="fraction_changed" tonode="Sun_I" tofield="set_fraction"></route>
+            <route fromnode="Sun_I" fromfield="value_changed" tonode="Sun_X" tofield="set_rotation"></route>
+            <transform def="Mercury_X">
+                <transform translation="2.5 0 0">
+                    <shape>
+                        <appearance>
+                            <material diffusecolor="0.7 0.6 0.5"></material>
+                        </appearance>
+                        <sphere radius="0.3"></sphere>
+                    </shape>
+                </transform>
+            </transform>
+            <timesensor def="Mercury_T" cycleinterval="4" loop="true"></timesensor>
+            <orientationinterpolator def="Mercury_I" key="0 0.25 0.5 0.75 1" keyvalue="0 1 0 0.00000 0 1 0 1.57080 0 1 0 3.14159 0 1 0 4.71239 0 1 0 6.28319"></orientationinterpolator>
+            <route fromnode="Mercury_T" fromfield="fraction_changed" tonode="Mercury_I" tofield="set_fraction"></route>
+            <route fromnode="Mercury_I" fromfield="value_changed" tonode="Mercury_X" tofield="set_rotation"></route>
+            <transform def="Venus_X">
+                <transform translation="3.8 0 0">
+                    <shape>
+                        <appearance>
+                            <material diffusecolor="0.9 0.7 0.3"></material>
+                        </appearance>
+                        <sphere radius="0.5"></sphere>
+                    </shape>
+                </transform>
+            </transform>
+            <timesensor def="Venus_T" cycleinterval="7" loop="true"></timesensor>
+            <orientationinterpolator def="Venus_I" key="0 0.25 0.5 0.75 1" keyvalue="0 1 0 0.00000 0 1 0 1.57080 0 1 0 3.14159 0 1 0 4.71239 0 1 0 6.28319"></orientationinterpolator>
+            <route fromnode="Venus_T" fromfield="fraction_changed" tonode="Venus_I" tofield="set_fraction"></route>
+            <route fromnode="Venus_I" fromfield="value_changed" tonode="Venus_X" tofield="set_rotation"></route>
+            <transform def="Earth_X">
+                <transform translation="5.3 0 0">
+                    <shape>
+                        <appearance>
+                            <material diffusecolor="0.2 0.5 1"></material>
+                        </appearance>
+                        <sphere radius="0.55"></sphere>
+                    </shape>
+                    <transform def="MoonOrbit_X">
+                        <transform translation="1 0 0">
+                            <shape>
+                                <appearance>
+                                    <material diffusecolor="0.8 0.8 0.8"></material>
+                                </appearance>
+                                <sphere radius="0.15"></sphere>
+                            </shape>
+                        </transform>
+                    </transform>
+                </transform>
+            </transform>
+            <timesensor def="Earth_T" cycleinterval="10" loop="true"></timesensor>
+            <orientationinterpolator def="Earth_I" key="0 0.25 0.5 0.75 1" keyvalue="0 1 0 0.00000 0 1 0 1.57080 0 1 0 3.14159 0 1 0 4.71239 0 1 0 6.28319"></orientationinterpolator>
+            <route fromnode="Earth_T" fromfield="fraction_changed" tonode="Earth_I" tofield="set_fraction"></route>
+            <route fromnode="Earth_I" fromfield="value_changed" tonode="Earth_X" tofield="set_rotation"></route>
+            <transform def="Mars_X">
+                <transform translation="6.8 0 0">
+                    <shape>
+                        <appearance>
+                            <material diffusecolor="1 0.3 0.2"></material>
+                        </appearance>
+                        <sphere radius="0.4"></sphere>
+                    </shape>
+                </transform>
+            </transform>
+            <timesensor def="Mars_T" cycleinterval="15" loop="true"></timesensor>
+            <orientationinterpolator def="Mars_I" key="0 0.25 0.5 0.75 1" keyvalue="0 1 0 0.00000 0 1 0 1.57080 0 1 0 3.14159 0 1 0 4.71239 0 1 0 6.28319"></orientationinterpolator>
+            <route fromnode="Mars_T" fromfield="fraction_changed" tonode="Mars_I" tofield="set_fraction"></route>
+            <route fromnode="Mars_I" fromfield="value_changed" tonode="Mars_X" tofield="set_rotation"></route>
+            <timesensor def="MoonOrbit_T" cycleinterval="2.5" loop="true"></timesensor>
+            <orientationinterpolator def="MoonOrbit_I" key="0 0.25 0.5 0.75 1" keyvalue="0 1 0 0.00000 0 1 0 1.57080 0 1 0 3.14159 0 1 0 4.71239 0 1 0 6.28319"></orientationinterpolator>
+            <route fromnode="MoonOrbit_T" fromfield="fraction_changed" tonode="MoonOrbit_I" tofield="set_fraction"></route>
+            <route fromnode="MoonOrbit_I" fromfield="value_changed" tonode="MoonOrbit_X" tofield="set_rotation"></route>
+        </scene>
+    </x3d>
+</body>
+</html>
