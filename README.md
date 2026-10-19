@@ -29,6 +29,6 @@ Open http://127.0.0.1:8765/. Do not use file://, because X_ITE fetches the .x3d.
 Checked on 2026-10-19 on macOS:
 - All 9 scenes pass `validate_x3d` (X3D 4.0 schema, 0 errors) and `validate_semantic` (0 errors, 0 warnings). galaxy has 4 infos, about shapes with no Appearance, which is intended because unlit PointSets use their Color. whack and tunnel use the Immersive profile, because they need TouchSensor and Fog level 2.
 - All 9 pages rendered in X_ITE 16.4.3 (headless Chromium over 127.0.0.1). Each screenshot is non-blank, and the two timestamps differ, by 1.2% (bounce) up to about 38% (equalizer, tunnel). The click scenes (touch, whack) were also clicked once between the two shots.
-- That render run answered the jsDelivr URL from a local copy of X_ITE 16.4.3. The live jsDelivr URL and the live GitHub Pages site have **not** been tested.
-- **X3DOM was never run.** There was no network and no local x3dom.js, so the `*.x3dom.html` pages are generated and well-formed but untested. Likely trouble spots, all unchecked: PointSet point size in the galaxy (X3DOM draws 1px points), Fog, the animated DirectionalLight colour, and TouchSensor picking.
+- That render run answered the jsDelivr URL from a local copy of X_ITE 16.4.3.
+- After deploying to https://hagsmac.github.io/x3dom.fun/ I opened X3DOM whack, galaxy and tunnel and X_ITE cradle in a browser and saw them render. X3DOM draws the galaxy's points fine, and the tunnel with fog. The other X3DOM pages, the TouchSensor click in X3DOM and the animated light in sierpinski were **not** checked.
 - A single unexplained 404 console message on the galaxy page (probably the favicon) was not chased.
